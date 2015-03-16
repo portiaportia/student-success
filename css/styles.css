@@ -62,8 +62,11 @@ body {
 	text-align:center;
 }
 
-#content {
+#home-content {
 	margin:20px 10px 10px 10px;
+}
+
+#content {
 }
 
 #main-footer {
@@ -109,11 +112,11 @@ body {
 }
 
 /* list */
-.nav-list ul, .cat-list ul {
+.nav-list > ul, .cat-list > ul {
 	list-style:none;
 }
 
-.nav-list li, .cat-list li {
+.nav-list > ul > li, .cat-list > ul > li {
 	border-bottom:1px solid #abc;
 	color:#316891;
 }
@@ -132,6 +135,11 @@ body {
 
 .nav-list .details, .cat-list li:hover {
 	background:#F3F3F3;
+}
+
+.details li {
+	margin-bottom:8px;
+	list-style-type:none;	
 }
 
 #list-title {
@@ -170,4 +178,8 @@ p {
 
 a {
 	color:#910836;
+}
+
+strong {
+	font-weight:600;
 }
