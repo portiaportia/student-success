@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/transitions.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+    	<div id="overlay">
+		<div id="page" class="m-scene p2">
+			<header id="main-header">
+				<a id="back-arrow" href="index.html" class="fa fa-chevron-left"></a><h1>Calendars</h1>
+			</header>
+			<div id="content" class="scene_element scene_element--fadein">
+				<nav class="cat-list">
+					<ul>
+						<li><a href="#" class="cat-link"><h3 id="list-title">Courses</h3></li></a>
+                        <li><a href="#" class="cat-link"><h3 id="list-title">Course Catalog</h3></li></a>
+                        <li><a href="#" class="cat-link"><h3 id="list-title">Blackboard</h3></li></a>
+					</ul>
+				</nav>
+			<footer id="main-footer">
+				
+			</footer>
+		</div>
+        </div>
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/jquery.smoothState.js"></script>
+		<script src="js/script.js"></script>
+        <script>
+			// prep some variables
+		  var startDate = new Date(2015,2,18,18,30,0,0,0); // beware: month 0 = january, 11 = december
+		  var endDate = new Date(2015,2,19,19,30,0,0,0);
+		  var title = "Portia's Special Event";
+		  var location = "Home";
+		  var notes = "Some notes about this event.";
+		  var success = function(message) { alert("Success: " + JSON.stringify(message)); };
+		  var error = function(message) { alert("Error: " + message); };
+		  var calendarName = "My Calendar";
+		 
+		  // create a calendar (iOS only for now)
+		  window.plugins.calendar.createCalendar(calendarName,success,error);
+		  
+		  // create an event in a named calendar (iOS only for now)
+  			window.plugins.calendar.createEventInNamedCalendar(title,location,notes,startDate,endDate,calendarName,success,error);
+		</script>
+	</body>
+</html>
