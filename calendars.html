@@ -32,12 +32,12 @@
 		
 			// prep some variables
 		  var startDate = new Date(2015,2,18,18,30,0,0,0); // beware: month 0 = january, 11 = december
-		  var endDate = new Date(2015,2,19,19,30,0,0,0);
-		  var title = "Portia's Special Event";
+		  var endDate = new Date(2015,2,18,20,30,0,0,0);
+		  var title = "Portia's Event";
 		  var location = "Home";
 		  var notes = "Some notes about this event.";
-		  var success = function(message) { alert("Success: " + JSON.stringify(message)); };
-		  var error = function(message) { alert("Error: " + message); };
+		  var success = function(message) { alert("Success: "); };
+		  var error = function(message) { alert("Error: "); };
 		  var calendarName = "My Calendar";
 		 alert("1");
 		  // create a calendar (iOS only for now)
