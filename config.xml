@@ -69,7 +69,7 @@
 	<preference name="StatusBarBackgroundColor" value="#000000" />
 	<preference name="StatusBarStyle" value="lightcontent" />
 	
-	<gap:plugin name="nl.x-services.plugins.calendar" />
+	<gap:plugin name="nl.x-services.plugins.calendar.berserk" version="3.2" />
 
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
