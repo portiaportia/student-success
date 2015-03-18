@@ -39,14 +39,15 @@
 		  var success = function(message) { alert("Success: " + JSON.stringify(message)); };
 		  var error = function(message) { alert("Error: " + message); };
 		  var calendarName = "My Calendar";
-		 alert("hello");
+		 alert("1");
 		  // create a calendar (iOS only for now)
-		  window.plugins.calendar.createCalendar(calendarName,success,error);
-		  alert("again");
+		  //window.plugins.calendar.createCalendar(calendarName,success,error);
+		  window.plugins.calendar.createEvent(title,location,notes,startDate,endDate,success,error);
+		  alert("2");
 		  // create an event in a named calendar (iOS only for now)
-  			window.plugins.calendar.createEventInNamedCalendar(title,location,notes,startDate,endDate,calendarName,success,error);
+  			//window.plugins.calendar.createEventInNamedCalendar(title,location,notes,startDate,endDate,calendarName,success,error);
 		
-		  alert("bye");
+		  alert("3");
         </script>
 	</body>
 </html>
