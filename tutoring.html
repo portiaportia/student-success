@@ -53,7 +53,7 @@
 								<ul>
                                     <li>Tutoring available for several of the core business courses.</li>
                                     <li><strong>Location: </strong>Thurmond 107</li>
-                                    <li><a href="#" id="business-link" target="_blank">www.winthrop.edu/cba/studentservices</a></li>
+                                    <li><a href="#"  <a href="#" onclick="window.open('http://www.wikipedia.org','_blank','location=yes')" target="_blank">www.winthrop.edu/cba/studentservices</a></li>
                                     <li>Click "Resources," then choose "CBA Resources" from the drop-down menu</li>
 								</ul>
                             </div>
@@ -132,8 +132,7 @@
 			
 			function showLink()
 			{
-				window.open = cordova.InAppBrowser.open;
-				window.open('http://www.winthrop.edu/cba/studentservices', '_blank', 'location=yes');	
+				window.open('http://www.winthrop.edu/cba/studentservices', '_blank', 'location=yes,toolbar=yes');	
 			}
 		</script>
 	</body>
