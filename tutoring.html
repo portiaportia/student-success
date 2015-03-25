@@ -53,7 +53,7 @@
 								<ul>
                                     <li>Tutoring available for several of the core business courses.</li>
                                     <li><strong>Location: </strong>Thurmond 107</li>
-                                    <li><a href="http://www.winthrop.edu/cba/studentservices" target="_blank">www.winthrop.edu/cba/studentservices</a></li>
+                                    <li><a href="#" id="business-link" target="_blank">www.winthrop.edu/cba/studentservices</a></li>
                                     <li>Click "Resources," then choose "CBA Resources" from the drop-down menu</li>
 								</ul>
                             </div>
@@ -126,5 +126,16 @@
 		<script src="js/jquery-1.11.2.min.js"></script>
 		<script src="js/jquery.smoothState.js"></script>
 		<script src="js/script.js"></script>
+        <script>
+			var businessLink = document.getElementById("business-link");
+			businessLink.addEventListener("click", showLink, false);
+			
+			function showLink()
+			{
+				alert("before");
+				window.open('portiaplante.com', '_blank', 'location=yes');	
+				alert("after");
+			}
+		</script>
 	</body>
 </html>
