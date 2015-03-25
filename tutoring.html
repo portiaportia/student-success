@@ -132,9 +132,8 @@
 			
 			function showLink()
 			{
-				alert("before");
+				window.open = cordova.InAppBrowser.open;
 				window.open('http://www.winthrop.edu/cba/studentservices', '_blank', 'location=yes');	
-				alert("after");
 			}
 		</script>
 	</body>
