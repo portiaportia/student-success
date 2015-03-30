@@ -128,13 +128,18 @@
 		<script src="js/script.js"></script>
         <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
         <script>
-			var businessLink = document.getElementById("business-link");
+			/*var businessLink = document.getElementById("business-link");
 			businessLink.addEventListener("click", showLink, false);
 			
 			function showLink()
 			{
 				window.open('http://www.winthrop.edu/cba/studentservices', '_blank', 'location=yes,toolbar=yes');	
-			}
+			}*/
+		</script>
+        <script>
+			StatusBar.overlaysWebView(false);
+StatusBar.styleLightContent();
+StatusBar.backgroundColorByName("black");
 		</script>
 	</body>
 </html>
