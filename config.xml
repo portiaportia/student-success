@@ -67,11 +67,11 @@
 	<gap:plugin name="org.apache.cordova.statusbar" version="0.1.4" />
 <!--	<preference name="StatusBarOverlaysWebView" value="false" />
 	<preference name="StatusBarBackgroundColor" value="#000000" />
-	<preference name="StatusBarStyle" value="default" />
+	<preference name="StatusBarStyle" value="default" />-->
 
 	<feature name="StatusBar">
          <param name="ios-package" value="CDVStatusBar" onload="true" />
-    </feature>-->
+    </feature>
 		
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
