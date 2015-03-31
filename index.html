@@ -74,7 +74,15 @@
 		<script src="js/jquery.smoothState.js"></script>
 		<script src="js/script.js"></script>
         <script>
+			document.addEventListener("deviceready", onDeviceReady, false);
+     
+
+		  function onDeviceReady() {
+			  alert("before");
 			StatusBar.styleDefault();
+			alert("after");
+		  }
+			
 			//StatusBar.hide();
 		</script>
 	</body>
