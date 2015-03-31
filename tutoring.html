@@ -126,20 +126,17 @@
 		<script src="js/jquery-1.11.2.min.js"></script>
 		<script src="js/jquery.smoothState.js"></script>
 		<script src="js/script.js"></script>
-        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        		<script src="js/script.js"></script>
+        <script src="phonegap.js"></script>
+
         <script>
-			/*var businessLink = document.getElementById("business-link");
-			businessLink.addEventListener("click", showLink, false);
-			
-			function showLink()
-			{
-				window.open('http://www.winthrop.edu/cba/studentservices', '_blank', 'location=yes,toolbar=yes');	
-			}*/
-		</script>
-        <script>
-			/*StatusBar.overlaysWebView(false);
-			StatusBar.styleLightContent();
-			StatusBar.backgroundColorByName("black");*/
+		function onBodyLoad() {
+    		document.addEventListener("deviceready", onDeviceReady, false); 
+		}
+
+		  function onDeviceReady() {
+				StatusBar.styleLightContent();
+		  }
 		</script>
 	</body>
 </html>
