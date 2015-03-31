@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	<body onload="onBodyLoad()">
+	<body>
     	<div id="overlay">
 		<div id="page" class="m-scene">
 			<div id="home-content" class="scene_element scene_element--fadein">
@@ -76,9 +76,7 @@
         <script src="phonegap.js"></script>
 
         <script>
-		function onBodyLoad() {
-    		document.addEventListener("deviceready", onDeviceReady, false); 
-		}
+    	document.addEventListener("deviceready", onDeviceReady, false); 
 
 		  function onDeviceReady() {
 				StatusBar.styleDefault();
