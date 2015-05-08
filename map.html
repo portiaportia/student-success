@@ -23,13 +23,25 @@
 		<script src="js/jquery.smoothState.js"></script>
 		<script src="js/script.js"></script>
         <script src="phonegap.js"></script>
-
+		<script src="js/panzoom.js"></script>
         <script>
     		document.addEventListener("deviceready", onDeviceReady, false); 
 
 		  function onDeviceReady() {
 				StatusBar.styleLightContent();
 		  }
+		</script>
+        <script>
+			$("#map").panzoom();
+
+			// Pass options
+			$("#map").panzoom("option", {
+			  increment: 0.4,
+			  minScale: 0.1,
+			  maxScale: 2,
+			  duration: 500
+			});
+		
 		</script>
 	</body>
 </html>
