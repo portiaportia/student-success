@@ -6,7 +6,7 @@
         id        = "com.portiaplante.student-success"
         version   = "1.0.0">
 
-    <name>Student Success</name>
+    <name>Success</name>
 
     <description>
         A student success app for Winthrop University
@@ -78,6 +78,8 @@
     <!--
         <gap:plugin name="com.phonegap.plugins.barcodescanner" />
     -->
+	
+	<gap:plugin name="nl.x-services.plugins.calendar" />
 	
 	<gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.4" source="plugins.cordova.io" />
 
