@@ -157,6 +157,10 @@ body {
 	background:magenta;
 }
 
+#map {
+	width:100%;	
+}
+
 /* Typography */
 h1 {
 	color:#fff;

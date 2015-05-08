@@ -10,27 +10,22 @@
     	<div id="overlay">
 		<div id="page" class="m-scene p2">
 			<header id="main-header">
-				<a id="back-arrow" href="index.html" class="fa fa-chevron-left"></a><h1>Calendars</h1>
+				<a id="back-arrow" href="index.html" class="fa fa-chevron-left"></a><h1>Campus Map</h1>
 			</header>
 			<div id="content" class="scene_element scene_element--fadein">
-				<nav class="cat-list">
-					<ul>
-						<li><a href="#" class="cat-link"><h3 id="list-title">Important Dates</h3></li></a>
-                        <li><a href="#" class="cat-link"><h3 id="list-title">Other Calendar</h3></li></a>
-                        <li><a href="#" class="cat-link"><h3 id="list-title">Other Calendar</h3></li></a>
-					</ul>
-				</nav>
+				<img src="images/map.gif" id="map">
 			<footer id="main-footer">
 				
 			</footer>
 		</div>
         </div>
-        <script src="phonegap.js"></script>
 		<script src="js/jquery-1.11.2.min.js"></script>
 		<script src="js/jquery.smoothState.js"></script>
 		<script src="js/script.js"></script>
+        <script src="phonegap.js"></script>
+
         <script>
-	    	document.addEventListener("deviceready", onDeviceReady, false); 
+    		document.addEventListener("deviceready", onDeviceReady, false); 
 
 		  function onDeviceReady() {
 				StatusBar.styleLightContent();
