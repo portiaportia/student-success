@@ -2,7 +2,8 @@
 
 /* Structure */
 body {
-	background:url(../images/tillman-bg.png);	
+	background:url(../images/tillman-bg-small.jpg);	
+	
 }
 
 #overlay {
@@ -74,6 +75,7 @@ body {
 	bottom:0;	
 	padding:10px;
 	background:rgba(255,255,255,0.8);
+	width:100%;
 }
 
 #main-footer img {
@@ -182,4 +184,30 @@ a {
 
 strong {
 	font-weight:600;
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        background:url(../images/tillman-bg-med.jpg);
+
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+       background:url(../images/tillman-bg-big.jpg);
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+       background:skyblue;
+    }
+}
+
+@media screen and (min-height: 796px) {
+	body {
+       background:skyblue;
+    }
 }
