@@ -32,8 +32,7 @@
         
 
 		<script>
-			alert("begin");
-			
+		
 			// prep some variables
   var startDate = new Date(2015,2,15,18,30,0,0,0); // beware: month 0 = january, 11 = december
   var endDate = new Date(2015,2,15,19,30,0,0,0);
@@ -45,6 +44,7 @@
 alert("before");
   // create a calendar (iOS only for now)
   window.plugins.calendar.createCalendar(calendarName,success,error);
+  alert("after");
   // if you want to create a calendar with a specific color, pass in a JS object like this:
   var createCalOptions = window.plugins.calendar.getCreateCalendarOptions();
   createCalOptions.calendarName = "My Cal Name";
