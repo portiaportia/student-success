@@ -28,7 +28,7 @@
 		display: none;	
 	}	
 	#zoom_container .landmarks .lable div {
-		width: 100px;
+		width: 100%;
 		padding: 4px;		
 	}	
 	#zoom_container .landmarks .mark .text{
@@ -39,10 +39,15 @@
 <script src="zoom_assets/jquery-1.11.1.min.js"></script>
 <script src="zoom_assets/jquery.smoothZoom.min.js"></script>
 <script>
+
+	var width = $(window).width() - 40;
+	alert(width);
+	var height = width/2;
+	
 	jQuery(function($){
 		$('#yourImageID').smoothZoom({
-			width: 850,
-			height: 544,
+			width: width,
+			height: height,
 			pan_BUTTONS_SHOW: "NO",
 			pan_LIMIT_BOUNDARY: "NO",
 			button_SIZE: 24,
