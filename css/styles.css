@@ -3,7 +3,10 @@
 /* Structure */
 body {
 	background:url(../images/tillman-bg-small.jpg);	
-	
+}
+
+body.map-body {
+	background:#fff;
 }
 
 #overlay {
@@ -19,10 +22,6 @@ body {
 	position:absolute;
 	top:0;
 	bottom:0;
-}
-
-#overlay.map-overlay {
-	background:#fff;
 }
 
 #overlay .p2 {	
