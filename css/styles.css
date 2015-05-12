@@ -21,6 +21,10 @@ body {
 	bottom:0;
 }
 
+#overlay.map-overlay {
+	background:#fff;
+}
+
 #overlay .p2 {	
 	background:#fff;
 }
