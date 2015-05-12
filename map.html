@@ -39,6 +39,10 @@
 		border-radius:5px;
 	}	
 	
+	.hide-map {
+		visibility:hidden;
+	}
+	
 </style>
 <script src="zoom_assets/jquery-1.11.1.min.js"></script>
 <script src="zoom_assets/jquery.smoothZoom.min.js"></script>
@@ -49,7 +53,7 @@
 
 		var height = $(window).height() - $("#main-header").height() -30;
 		
-		$('#yourImageID').smoothZoom({
+		$('#campus-map').smoothZoom({
 			width: width,
 			height: height,
 			pan_BUTTONS_SHOW: "NO",
@@ -70,9 +74,13 @@
 			max_WIDTH: '',
 			max_HEIGHT: ''
 		});
+		
+		$("#campus-map").removeClass("hide-map");
 	});
 	
 	$.mobile.pushStateEnabled = false;
+	
+	
 </script>
 
 	</head>
@@ -86,7 +94,7 @@
             <div id="zoom_container">
             
                 <!-- Set correct width and height of the image. This is needed to avoid position issues on Apple devices iPad, iPhone and iPod -->
-                <img id="yourImageID" src="images/map.jpg" width="1500px" height="900px" />
+                <img id="campus-map" class="hide-map" src="images/map.jpg" width="1500px" height="900px" />
         
                 <!-- HELP NOTE:----------------------------------------------------------------------------------- 
                     * All the landmarks should be wrapped inside the div with class "landmarks" as shown below.
