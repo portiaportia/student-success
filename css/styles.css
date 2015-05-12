@@ -86,7 +86,8 @@ body {
 
 /* Home page */
 .row {
-	overflow:hideen;	
+	margin-top:20px;
+	overflow:hidden;
 }
 
 .nav-item {
