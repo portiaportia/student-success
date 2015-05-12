@@ -32,19 +32,21 @@
 		/*padding: 4px;		*/
 	}	
 	#zoom_container .landmarks .mark .text{
-		background-color:#000000;
+		color:#316891;
+		font-size:16px;
 		padding:2px 6px;
+		border-radius:5px;
 	}	
+	
 </style>
 <script src="zoom_assets/jquery-1.11.1.min.js"></script>
 <script src="zoom_assets/jquery.smoothZoom.min.js"></script>
-<script>
-
-	var width = $(window).width();
-
-	var height = width;
-	
+<script>	
 	jQuery(function($){
+		var width = $("#overlay").width();
+
+		var height = $("#overlay").height() - $("#main-header").height() -30;
+		
 		$('#yourImageID').smoothZoom({
 			width: width,
 			height: height,
@@ -96,15 +98,16 @@
                     * The "data-allow-drag" attribute is to enable/disable the draggability of main image while the mouse/finger touches the landmarks.
                       IMPORTANT: If the landmarks/locations/lables have hyperlinks, set data-allow-drag = "false"
                 ----------------------------------------------------------------------------------------------- -->
-                <div class="landmarks" data-show-at-zoom="100" data-allow-drag="false" data-allow-scale="false">	
+                <div class="landmarks" data-show-at-zoom="200" data-allow-drag="false" data-allow-scale="false">	
                     
-                    <div class="item mark" data-position="420, 380" data-allow-scale="true">
-                        <div>
+                    <div class="item mark" data-position="480, 150" data-allow-scale="true">
+                       <a href="#" class="marker-link" title="Thurmond"> <div>
                             <div class="text">
-                                <strong>Pin 1</strong>
-                            </div>						
-                            <img src="images/pin.png" width="50px" height="40px" alt="mark 1" />	
-                        </div>									
+                                <!--<strong>Thurmond</strong>-->
+                                <!--<i class="fa fa-map-marker"></i>-->
+                            </div>	
+                            <img class="marker" src="images/marker.png" width="15px"  />					
+                        </div></a>									
                     </div>			
                     
                     <div class="item mark" data-position="558,515">
@@ -112,16 +115,11 @@
                             <div class="text">
                                 <strong>Pin 2</strong>
                             </div>						
-                            <img src="images/pin.png" width="50px" height="40px" alt="mark 2" />	
+                            <img src="images/pin.png" width="30px" height="20px" alt="mark 2" />	
                         </div>									
                     </div>
-                        
                 </div>
             </div>
-            
-			<footer id="main-footer">
-				
-			</footer>
 		</div>
         </div>
         
@@ -132,16 +130,19 @@
 		<script src="js/script.js"></script>
         <script src="phonegap.js"></script>
 		<script>
+		$(".marker-link").click(showText);
+		
+		function showText()
+		{
+			alert("hi");  
+			return false;
+		}
+		  
 		document.addEventListener("deviceready", onDeviceReady, false); 
 
-		  function onDeviceReady() {
-				StatusBar.styleLightContent();
-				
-				// set to either landscape
-				window.lockOrientation('landscape');
-		  }
-		  
-			
+		function onDeviceReady() {
+			StatusBar.styleLightContent();
+		}	
 		</script>
    
 	</body>
