@@ -109,6 +109,7 @@ body.map-body {
 .nav-item i{
 	font-size:3em;
 	color:rgba(0,67,118, 0.8);
+	/*color:#910836;*/
 }
 
 .nav-icon {
@@ -118,7 +119,8 @@ body.map-body {
 	border-radius:5px;
 	width:4em;
 	margin:auto;
-	margin-bottom:5px;	
+	margin-bottom:5px;
+	/*background:#fff;	*/
 }
 
 /* list */
