@@ -50,6 +50,7 @@
 			height: height,
 			pan_BUTTONS_SHOW: "NO",
 			pan_LIMIT_BOUNDARY: "NO",
+			zoom_BUTTONS_SHOW: false,
 			button_SIZE: 24,
 			button_ALIGN: "top right",	
 			zoom_MAX: 800,
@@ -73,7 +74,7 @@
     	<div id="overlay">
 		<div id="page" class="m-scene p2">
 			<header id="main-header">
-				<a id="back-arrow" href="index.html" class="fa fa-chevron-left"></a><h1>Directory</h1>
+				<a id="back-arrow" href="index.html" class="fa fa-chevron-left"></a><h1>Map</h1>
 			</header>
 			
             
@@ -96,47 +97,6 @@
                       IMPORTANT: If the landmarks/locations/lables have hyperlinks, set data-allow-drag = "false"
                 ----------------------------------------------------------------------------------------------- -->
                 <div class="landmarks" data-show-at-zoom="100" data-allow-drag="false" data-allow-scale="false">	
-                
-                    <!------------------------------------------------------------------------------------------------------------------
-                        HELP NOTE:
-                        The following 2 div tags are lables. Each lable can be customised individually using following 5 data attributes:
-                        
-                        * data-position= "100,50" [Enter x, y values of position - this is center point of the element not top-left]
-                        * data-bg-color= "#000000" [BG color of lable text]
-                        * data-bg-opacity= ".7" [BG transparency of lable text]
-                        * data-show-at-zoom= "150" [At which zoom percentage, this landmark should be visible. Set 0 to show always]
-                        * data-allow-scale= "true" [To resize the landmark or not](Doesn't supported by IE8 and below).
-                    ---------------------------------------------------------------------------------------------------------------- -->				
-                        
-                    <div class="item lable" data-position="780,170" data-bg-color="#000000" data-bg-opacity=".7" data-show-at-zoom="0">
-                        <div>												
-                            <strong>Permanent Lable</strong>  Shows at all zoom levels.
-                        </div>
-                    </div>
-                    
-                    <div class="item lable" data-position="490,540" data-allow-scale="true">
-                        <div>						
-                            <strong>Lable 2</strong>
-                        </div>	
-                    </div>			
-        
-                    <!------------------------------------------------------------------------------------------------------------------
-                        HELP NOTE:
-                        The following 3 div tags are marks. Each mark can be customised individually using following 3 data attributes:
-                        
-                        * data-position= "100,50" [Enter x, y values of position - this is center point of the element not top-left]
-                        * data-show-at-zoom= "150" [At which zoom percentage, this landmark should be visible. Set 0 to show always]
-                        * data-allow-scale= "true" [To resize the landmark or not] (Doesn't supported by IE8 and below).
-                    ---------------------------------------------------------------------------------------------------------------- -->
-                    
-                    <div class="item mark"data-position="480,465" data-show-at-zoom="0">
-                        <a href="http://winthrop.edu"><div>
-                            <div class="text" style="width:100px">
-                                <strong>Permanent Mark</strong><br /> Shows at all zoom levels.
-                            </div>
-                            <img src="images/mark.png" width="50px" height="50px" alt="Permanent Mark" />	
-                        </div></a>	
-                    </div>
                     
                     <div class="item mark" data-position="420, 380" data-allow-scale="true">
                         <div>
