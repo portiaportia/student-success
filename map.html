@@ -132,8 +132,16 @@
 		<script src="js/script.js"></script>
         <script src="phonegap.js"></script>
 		<script>
-			// set to either landscape
-			window.lockOrientation('landscape');
+		document.addEventListener("deviceready", onDeviceReady, false); 
+
+		  function onDeviceReady() {
+				StatusBar.styleLightContent();
+				
+				// set to either landscape
+				window.lockOrientation('landscape');
+		  }
+		  
+			
 		</script>
    
 	</body>
