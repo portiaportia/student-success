@@ -29,7 +29,7 @@
 	}	
 	#zoom_container .landmarks .lable div {
 		width: 100%;
-		padding: 4px;		
+		/*padding: 4px;		*/
 	}	
 	#zoom_container .landmarks .mark .text{
 		background-color:#000000;
@@ -40,9 +40,9 @@
 <script src="zoom_assets/jquery.smoothZoom.min.js"></script>
 <script>
 
-	var width = $(window).width()-10;
+	var width = $(window).width();
 
-	var height = width/2;
+	var height = width;
 	
 	jQuery(function($){
 		$('#yourImageID').smoothZoom({
