@@ -4,6 +4,7 @@
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/transitions.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         
         <style>
@@ -41,6 +42,7 @@
 </style>
 <script src="zoom_assets/jquery-1.11.1.min.js"></script>
 <script src="zoom_assets/jquery.smoothZoom.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
 <script>	
 	jQuery(function($){
 		var width = $("#overlay").width();
@@ -69,6 +71,8 @@
 			max_HEIGHT: ''
 		});
 	});
+	
+	$.mobile.pushStateEnabled = false;
 </script>
 
 	</head>
@@ -79,7 +83,6 @@
 				<a id="back-arrow" href="index.html" class="fa fa-chevron-left"></a><h1>Map</h1>
 			</header>
 			
-            
             <div id="zoom_container">
             
                 <!-- Set correct width and height of the image. This is needed to avoid position issues on Apple devices iPad, iPhone and iPod -->
@@ -101,13 +104,17 @@
                 <div class="landmarks" data-show-at-zoom="100" data-allow-drag="false" data-allow-scale="false">	
                     
                     <div class="item mark" data-position="480, 150" data-allow-scale="true">
-                       <a href="#" class="marker-link" title="Thurmond"> <div>
+                       <a href="#thurmond-info" title="Thurmond" data-rel="popup" data-transition="pop" title="Thurmond"> <div>
                             <div class="text">
                                 <!--<strong>Thurmond</strong>-->
                                 <!--<i class="fa fa-map-marker"></i>-->
                             </div>	
                             <img class="marker" src="images/marker.png" width="15px"  />					
-                        </div></a>									
+                        </div></a>	
+                        
+                        <div data-role="popup" id="thurmond-info" class="ui-content" data-theme="a" style="max-width:350px;">
+                          <p>Here is a <strong>tiny popup</strong> being used like a tooltip. The text will wrap to multiple lines as needed.</p>
+                        </div>								
                     </div>			
                     
                     <div class="item mark" data-position="558,515">
@@ -125,7 +132,7 @@
         
         
     	
-		<script src="js/jquery-1.11.2.min.js"></script>
+		<!--<script src="js/jquery-1.11.2.min.js"></script>-->
 		<script src="js/jquery.smoothState.js"></script>
 		<script src="js/script.js"></script>
         <script src="phonegap.js"></script>
