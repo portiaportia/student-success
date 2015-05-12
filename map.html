@@ -47,7 +47,7 @@
 	jQuery(function($){
 		var width = $("#overlay").width();
 
-		var height = $("#overlay").height() - $("#main-header").height() -30;
+		var height = $(window).height() - $("#main-header").height() -30;
 		
 		$('#yourImageID').smoothZoom({
 			width: width,
@@ -86,7 +86,7 @@
             <div id="zoom_container">
             
                 <!-- Set correct width and height of the image. This is needed to avoid position issues on Apple devices iPad, iPhone and iPod -->
-                <img id="yourImageID" src="images/map.gif" width="850px" height="544px" />
+                <img id="yourImageID" src="images/map.jpg" width="2363px" height="1511" />
         
                 <!-- HELP NOTE:----------------------------------------------------------------------------------- 
                     * All the landmarks should be wrapped inside the div with class "landmarks" as shown below.
@@ -101,19 +101,19 @@
                     * The "data-allow-drag" attribute is to enable/disable the draggability of main image while the mouse/finger touches the landmarks.
                       IMPORTANT: If the landmarks/locations/lables have hyperlinks, set data-allow-drag = "false"
                 ----------------------------------------------------------------------------------------------- -->
-                <div class="landmarks" data-show-at-zoom="100" data-allow-drag="false" data-allow-scale="false">	
+                <div class="landmarks" data-show-at-zoom="0" data-allow-drag="false" data-allow-scale="false">	
                     
-                    <div class="item mark" data-position="480, 150" data-allow-scale="true">
+                    <div class="item mark" data-position="1330, 425" data-allow-scale="true">
                        <a href="#thurmond-info" title="Thurmond" data-rel="popup" data-transition="pop" title="Thurmond"> <div>
                             <div class="text">
                                 <!--<strong>Thurmond</strong>-->
                                 <!--<i class="fa fa-map-marker"></i>-->
                             </div>	
-                            <img class="marker" src="images/marker.png" width="15px"  />					
+                            <img class="marker" src="images/marker.png" width="50px"  />					
                         </div></a>	
                         
                         <div data-role="popup" id="thurmond-info" class="ui-content" data-theme="a" style="max-width:350px;">
-                          <p>Here is a <strong>tiny popup</strong> being used like a tooltip. The text will wrap to multiple lines as needed.</p>
+                          <p><strong>Thurmond</strong>  (College of Business)</p>
                         </div>								
                     </div>			
                     
@@ -137,13 +137,6 @@
 		<script src="js/script.js"></script>
         <script src="phonegap.js"></script>
 		<script>
-		$(".marker-link").click(showText);
-		
-		function showText()
-		{
-			alert("hi");  
-			return false;
-		}
 		  
 		document.addEventListener("deviceready", onDeviceReady, false); 
 
