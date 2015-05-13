@@ -74,11 +74,16 @@
 		<script src="js/jquery.smoothState.js"></script>
 		<script src="js/script.js"></script>
        <script>
-    	//document.addEventListener("deviceready", onDeviceReady, false); 
+    	document.addEventListener("deviceready", onDeviceReady, false); 
 
-		  //function onDeviceReady() {
+		 function onDeviceReady() {
 				StatusBar.styleDefault();
-		 // }
+		 }
+		 
+		 window.onload = function()
+		{
+			StatusBar.styleDefault();
+		};
 		</script>
 	</body>
 </html>

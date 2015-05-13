@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <script src="phonegap.js"></script>
         <style>
 	.smooth_zoom_preloader {
 		background-image: url(zoom_assets/preloader.gif);
@@ -14,6 +14,11 @@
 	.smooth_zoom_icons {
 		background-image: url(zoom_assets/icons.png);
 	}
+	
+	body.map-body {
+		background:#fff;
+	}
+
 	#zoom_container .landmarks{
 		position:absolute;
 		z-index:10;	
@@ -362,7 +367,6 @@
 		<!--<script src="js/jquery-1.11.2.min.js"></script>-->
 		<script src="js/jquery.smoothState.js"></script>
 		<script src="js/script.js"></script>
-        <script src="phonegap.js"></script>
 		<script>
 		  
 		document.addEventListener("deviceready", onDeviceReady, false); 
@@ -370,6 +374,11 @@
 		function onDeviceReady() {
 			StatusBar.styleLightContent();
 		}	
+		
+		window.onload = function()
+		{
+			StatusBar.styleLightContent();
+		};
 		</script>
    
 	</body>
