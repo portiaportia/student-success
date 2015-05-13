@@ -32,6 +32,11 @@ body {
 	padding:10px;
 	padding-top:20px;
 	overflow:hidden;
+	position:fixed;
+	width:100%;
+	height:70px;
+	margin:0;
+	z-index:10;
 }
 
 
@@ -78,6 +83,8 @@ body {
 }
 
 #content {
+	position:relative;
+	top:70px;
 }
 
 #main-footer {
@@ -146,6 +153,7 @@ body {
 .nav-list > ul > li, .cat-list > ul > li {
 	border-bottom:1px solid #abc;
 	color:#316891;
+	background:#fff;
 }
 
 .nav-list .nav-link, .cat-list .cat-link {
