@@ -8,49 +8,49 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         
         <style>
-	body {
-		background:#fff;	
-	}
+		body {
+			background:#fff;	
+		}
+			
+		.smooth_zoom_preloader {
+			background-image: url(zoom_assets/preloader.gif);
+		}	
+		.smooth_zoom_icons {
+			background-image: url(zoom_assets/icons.png);
+		}
+		#zoom_container .landmarks{
+			position:absolute;
+			z-index:10;	
+			top:0px;
+			left:0px;
+			font-family: Helvetica, Arial, Verdana;
+			font-size:12px;
+			color: #ffffff;
+		}	
+		#zoom_container .landmarks .item {
+			position:absolute;		
+			text-align:center;		
+			display: none;	
+		}	
+		#zoom_container .landmarks .lable div {
+			width: 100%;
+			/*padding: 4px;		*/
+		}	
+		#zoom_container .landmarks .mark .text{
+			color:#316891;
+			font-size:16px;
+			padding:2px 6px;
+			border-radius:5px;
+		}	
 		
-	.smooth_zoom_preloader {
-		background-image: url(zoom_assets/preloader.gif);
-	}	
-	.smooth_zoom_icons {
-		background-image: url(zoom_assets/icons.png);
-	}
-	#zoom_container .landmarks{
-		position:absolute;
-		z-index:10;	
-		top:0px;
-		left:0px;
-		font-family: Helvetica, Arial, Verdana;
-		font-size:12px;
-		color: #ffffff;
-	}	
-	#zoom_container .landmarks .item {
-		position:absolute;		
-		text-align:center;		
-		display: none;	
-	}	
-	#zoom_container .landmarks .lable div {
-		width: 100%;
-		/*padding: 4px;		*/
-	}	
-	#zoom_container .landmarks .mark .text{
-		color:#316891;
-		font-size:16px;
-		padding:2px 6px;
-		border-radius:5px;
-	}	
-	
-	.hide-map {
-		visibility:hidden;
-	}
-	
-</style>
+		.hide-map {
+			visibility:hidden;
+		}
+		
+	</style>
 <script src="zoom_assets/jquery-1.11.1.min.js"></script>
 <script src="zoom_assets/jquery.smoothZoom.min.js"></script>
-<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<!--<script src="js/jquery.mobile-1.4.5.min.js"></script>
 <script>	
 	jQuery(function($){
 		var width = $("#overlay").width();
@@ -82,9 +82,7 @@
 		$("#campus-map").removeClass("hide-map");
 	});
 	
-	$.mobile.pushStateEnabled = false;
-	
-	
+	$.mobile.pushStateEnabled = false;	-->
 </script>
 
 	</head>
@@ -361,16 +359,10 @@
 		</div>
         </div>
         
-        
-    	
 		<!--<script src="js/jquery-1.11.2.min.js"></script>-->
 		<script src="js/jquery.smoothState.js"></script>
 		<script src="js/script.js"></script>
         <script src="phonegap.js"></script>
-		<script>
-		  
-		
-		</script>
-   
+
 	</body>
 </html>
