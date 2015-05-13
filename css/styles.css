@@ -186,6 +186,23 @@ body {
 	width:100%;	
 }
 
+/* calendar */
+#date-list li {
+	overflow:hidden;	
+}
+
+.cal-date {
+	float:left;
+	width:30%;
+	padding-right:1%;
+}
+
+.cal-details {
+	float:left;
+	width:69%;
+}
+
+
 /* Typography */
 h1 {
 	color:#fff;
