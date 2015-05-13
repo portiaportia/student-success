@@ -80,6 +80,12 @@
 		  function onDeviceReady() {
 				StatusBar.styleDefault();
 		  }
+		  
+		  $("body").on( "pageshow", function( event, ui ) {
+			  $('body').css('background-image', 'url("images/tillman-bg-small.jpg")');
+			  alert("hi");
+			});
+
 		</script>
 	</body>
 </html>
