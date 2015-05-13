@@ -79,13 +79,9 @@
     	document.addEventListener("deviceready", onDeviceReady, false); 
 
 		  function onDeviceReady() {
-				StatusBar.styleDefault();
+				//StatusBar.styleDefault();
+				StatusBar.styleLightContent();
 		  }
-		  
-		  $("body").on( "pageshow", function( event, ui ) {
-			  $('body').css('background-image', 'url("images/tillman-bg-small.jpg")');
-			  alert("hi");
-			});
 
 		</script>
 	</body>
