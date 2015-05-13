@@ -73,22 +73,12 @@
 		<script src="js/jquery-1.11.2.min.js"></script>
 		<script src="js/jquery.smoothState.js"></script>
 		<script src="js/script.js"></script>
-        <script src="js/jquery.mobile-1.4.5.min.js"></script>
        <script>
     	document.addEventListener("deviceready", onDeviceReady, false); 
 
-		 function onDeviceReady() {
+		  function onDeviceReady() {
 				StatusBar.styleDefault();
-		 }
-		 
-
-		$( "body" ).on( "pageshow", function( event, ui ) {
-		  StatusBar.styleDefault();
-		  
-		  $("body").css({ 
-				background: "url('images/tillman-bg-small.jpg') no-repeat fixed top center transparent"
-			});
-		});
+		  }
 		</script>
 	</body>
 </html>
