@@ -133,6 +133,12 @@ body {
 }
 
 /* list */
+#date-list li {
+	border-bottom:1px solid #abc;
+	color:#316891;
+	padding:15px 15px;
+}
+
 .nav-list > ul, .cat-list > ul {
 	list-style:none;
 }

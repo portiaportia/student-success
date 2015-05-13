@@ -14,10 +14,7 @@
 			</header>
 			<div id="content" class="scene_element scene_element--fadein">
 				<nav class="cat-list">
-					<ul>
-						<li><a href="#" class="cat-link"><h3 id="list-title">Important Dates</h3></li></a>
-                        <li><a href="#" class="cat-link"><h3 id="list-title">Other Calendar</h3></li></a>
-                        <li><a href="#" class="cat-link"><h3 id="list-title">Other Calendar</h3></li></a>
+					<ul id="date-list">
 					</ul>
 				</nav>
             </div>
@@ -28,10 +25,31 @@
 		<script src="js/jquery.smoothState.js"></script>
 		<script src="js/script.js"></script>
         <script>
-	    	document.addEventListener("deviceready", onDeviceReady, false); 
+	    	//document.addEventListener("deviceready", onDeviceReady, false); 
 
-		  function onDeviceReady() {
+		  //function onDeviceReady() {
 			//	StatusBar.styleLightContent();
+		  //}
+		  
+		  var dates = new Array();
+		  dates[0] = [new Date(2015, 7, 28), "Academic Success Center Tutee Seminar"];
+		  dates[1] = [new Date(2015, 8, 4), "Academic Success Center Tutee Seminar"];
+		  dates[2] = [new Date(2015, 8, 7), "No Classes, Labor Day Holiday"];
+		  dates[3] = [new Date(2015, 8, 8), "Student Involvement Fair, 11am, Campus Green"];
+		  
+		  var list = $("#date-list");
+		  list.html("");
+		  var today = new Date();
+		  
+		  for(var i=0; i < dates.length; i++)
+		  {
+				dates[i][0].setHours(23);	
+				if(dates[i][0] >= today)
+				{
+					var dateDisplay = dates[i][0].getMonth() + "/" + dates[i][0].getDate() + "/" + dates[i][0].getFullYear();
+					
+			  		list.append("<li><strong>" + dateDisplay + "</strong>: " +  dates[i][1] + "</li>");
+				}
 		  }
 		</script>
 	</body>
