@@ -196,6 +196,13 @@ h3 {
 	color:#316891;
 }
 
+h4 {
+	font-size:1.1em;
+	
+	color:#316891;
+	margin-bottom:10px;
+}
+
 p {
 	font-size:1em;
 	margin-bottom:.3em;
@@ -207,6 +214,20 @@ a {
 
 strong {
 	font-weight:600;
+}
+
+.my-money .details li {
+	list-style-type:disc;	
+	margin-left:20px;
+}
+
+.my-money .details p {
+	margin-bottom:15px;	
+}
+
+video {
+	max-width:560px;
+	width:100%;	
 }
 /*
 @media screen and (min-width: 500px) {
