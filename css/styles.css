@@ -165,17 +165,17 @@ a {
 	padding:15px 15px;
 }
 
-.nav-list > ul, .cat-list > ul {
+.nav-list > ul, .cat-list > ul, .dir-list > ul {
 	list-style:none;
 }
 
-.nav-list > ul > li, .cat-list > ul > li {
+.nav-list > ul > li, .cat-list > ul > li, .dir-list > ul > li {
 	border-bottom:1px solid #abc;
 	color:#316891;
 	background:#fff;
 }
 
-.nav-list .nav-link, .cat-list .cat-link {
+.nav-list .nav-link, .cat-list .cat-link , .dir-list a{
 	text-decoration:none;
 	color:black;
 	display:block;
@@ -187,7 +187,7 @@ a {
 	padding:0 15px 15px;
 }
 
-.nav-list .details, .cat-list li:hover {
+.nav-list .details, .cat-list li:hover, .dir-list li:hover {
 	background:#F3F3F3;
 }
 
