@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/transitions.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+    	<div id="overlay">
+		<div id="page" class="m-scene p2">
+			<header id="main-header">
+				<a class="back-link" href="directory.html"></a>
+                <div id="back-arrow" class="fa fa-chevron-left"></div><h1>Academic Excellence</h1>
+			</header>
+			<div id="content" class="scene_element scene_element--fadein">
+				<nav class="cat-list">
+					<ul>
+						<li>
+							<a class="cat-link" href="#honors-program">
+								<h3 id="list-title">Honors Program</h3> 
+								<div id="carrot" class="fa fa-chevron-down"></div>
+							</a>
+							<div class="details" id="honors-program">
+								<ul>
+                                	<li>Dr. Kathy Lyon, Director</li>
+                                    <li><strong>Contact: </strong><a href="tel:+803-323-2320">803-323-2320</a></li>
+									<li><a href="#" onclick="window.open('http://www.winthrop.edu/honors','_blank','location=yes')" target="_blank">www.winthrop.edu/honors</a></li>
+                                    <li><strong>Location: </strong>Honors Center at the Courtyard</li>
+							</div>
+						</li>
+                        <li>
+							<a class="cat-link" href="#leadership-program">
+								<h3 id="list-title">Leadership Studies Program</h3> 
+								<div id="carrot" class="fa fa-chevron-down"></div>
+							</a>
+							<div class="details" id="leadership-program">
+								<ul>
+                                	<li>Dr. Kristi Schoepfer, Director</li>
+                                    <li><strong>Contact: </strong><a href="tel:+803-323-4686">803-323-4686</a></li>
+									<li><a href="#" onclick="window.open('http://www.winthrop.edu/leadershipstudies','_blank','location=yes')" target="_blank">www.winthrop.edu/leadershipstudies</a></li>
+                                    <li><strong>Location: </strong>218B West Center</li>
+							</div>
+						</li>
+                        <li>
+							<a class="cat-link" href="#mcnair-program">
+								<h3 id="list-title">McNair Scholars Program</h3> 
+								<div id="carrot" class="fa fa-chevron-down"></div>
+							</a>
+							<div class="details" id="mcnair-program">
+								<ul>
+                                	<li>Dr. Cheryl-Fortner Wood, Director</li>
+                                    <li><strong>Contact: </strong><a href="tel:+803-323-2125">803-323-2125</a></li>
+									<li><a href="#" onclick="window.open('http://www.winthrop.edu/mcnair','_blank','location=yes')" target="_blank">www.winthrop.edu/mcnair</a></li>
+                                    <li><strong>Location: </strong>104 Dinkins Hall</li>
+							</div>
+						</li>
+                        <li>
+							<a class="cat-link" href="#national-program">
+								<h3 id="list-title">Office of Nationally Competitive Awards</h3> 
+								<div id="carrot" class="fa fa-chevron-down"></div>
+							</a>
+							<div class="details" id="national-program">
+								<ul>
+                                	<li>Dr. Leslie Bickford, Director</li>
+                                    <li><strong>Contact: </strong><a href="tel:+803-323-3906">803-323-3906</a></li>
+									<li><a href="#" onclick="window.open('http://www.winthrop.edu/onca','_blank','location=yes')" target="_blank">www.winthrop.edu/onca</a></li>
+                                    <li><strong>Location: </strong>222 Dinkins Hall</li>
+							</div>
+						</li>
+                         <li>
+							<a class="cat-link" href="#research-program">
+								<h3 id="list-title">Undergraduate Research Office</h3> 
+								<div id="carrot" class="fa fa-chevron-down"></div>
+							</a>
+							<div class="details" id="research-program">
+								<ul>
+                                	<li>Dr. Robin Lammi, Director</li>
+                                    <li><strong>Contact: </strong><a href="tel:+803-323-3397">803-323-3397</a></li>
+									<li><a href="#" onclick="window.open('http://www.winthrop.edu/undergradresearch','_blank','location=yes')" target="_blank">www.winthrop.edu/undergradresearch</a></li>
+                                    <li><strong>Location: </strong>222 Dinkins Hall</li>
+							</div>
+						</li>
+				</nav>
+            </div>
+            
+		</div>
+        </div>
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/jquery.smoothState.js"></script>
+		<script src="js/script.js"></script>
+        <script src="phonegap.js"></script>
+
+        <script>
+    		document.addEventListener("deviceready", onDeviceReady, false); 
+
+		  function onDeviceReady() {
+			//	StatusBar.styleLightContent();
+		  }
+		  
+		  //prevents link gray style
+		  document.addEventListener("touchstart", function(){}, true);
+		</script>
+	</body>
+</html>

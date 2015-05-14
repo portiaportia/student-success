@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/transitions.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+    	<div id="overlay">
+		<div id="page" class="m-scene p2">
+			<header id="main-header">
+				<a class="back-link" href="directory.html"></a>
+                <div id="back-arrow" class="fa fa-chevron-left"></div><h1>Health And Counselling Services</h1>
+			</header>
+			<div id="content" class="scene_element scene_element--fadein">
+				<nav class="cat-list">
+					<ul>
+                    	<li>
+							<a class="cat-link" href="#health-services">
+								<h3 id="list-title">Health Services</h3> 
+								<div id="carrot" class="fa fa-chevron-down"></div>
+							</a>
+							<div class="details" id="health-services">
+								<ul>
+                                    <li><strong>Contact: </strong><a href="tel:+803-323-2206">803-323-2206</a></li>
+									<li><a href="#" onclick="window.open('http://www.winthrop.edu/hcs','_blank','location=yes')" target="_blank">www.winthrop.edu/hcs</a></li>
+                                    <li><strong>Location: </strong>224 Crawford Building</li>
+							</div>
+						</li>
+				</nav>
+            </div>
+            
+		</div>
+        </div>
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/jquery.smoothState.js"></script>
+		<script src="js/script.js"></script>
+        <script src="phonegap.js"></script>
+
+        <script>
+    		document.addEventListener("deviceready", onDeviceReady, false); 
+
+		  function onDeviceReady() {
+			//	StatusBar.styleLightContent();
+		  }
+		  
+		  //prevents link gray style
+		  document.addEventListener("touchstart", function(){}, true);
+		</script>
+	</body>
+</html>
