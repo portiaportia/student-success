@@ -34,7 +34,7 @@ body {
 	overflow:hidden;
 	position:fixed;
 	width:100%;
-	height:70px;
+	height:80px;
 	margin:0;
 	z-index:11;
 }
@@ -58,9 +58,17 @@ body {
 	margin-right:2%;
 	color:#fff;
 	font-size:1em;
-	font-weight:100;
 	margin-top:1.2em;
 	text-decoration:none;
+}
+
+.back-link {
+	top:0;
+	left:0;
+	position:absolute;
+	height:80px;
+	width:20%;
+	background:red;	
 }
 
 #main-header h1 {
@@ -84,11 +92,11 @@ body {
 
 #content {
 	position:relative;
-	top:70px;
+	top:80px;
 }
 
 #zoom_container {
-	top:70px;
+	top:80px;
 	border:none;
 }
 
