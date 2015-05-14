@@ -229,6 +229,14 @@ a {
 	width:69%;
 }
 
+#date-list .accademic-date {
+	background:rgba(144,7,53,0.2);	
+}
+
+#date-list .holiday-date {
+	background:rgba(45,158,146,0.2);	
+}
+
 
 /* Typography */
 h1 {
