@@ -68,6 +68,7 @@ body {
 	position:absolute;
 	height:80px;
 	width:20%;
+	z-index:20;
 }
 
 a {
