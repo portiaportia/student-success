@@ -87,6 +87,13 @@ body {
 	top:70px;
 }
 
+#zoom_container {
+	top:70px;
+	border:none;
+}
+
+
+
 #main-footer {
 	position:absolute;
 	bottom:0;	
