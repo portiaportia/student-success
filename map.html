@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="css/transitions.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="css/popup.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         
         <style>
@@ -51,6 +52,7 @@
 <script src="zoom_assets/jquery-1.11.1.min.js"></script>
 <script src="zoom_assets/jquery.smoothZoom.min.js"></script>
 <!--<script src="js/jquery.mobile-1.4.5.min.js"></script>-->
+<script src="js/jquery.popup.js"></script>
 <script>	
 	jQuery(function($){
 		var width = $("#overlay").width();
@@ -83,6 +85,11 @@
 	});
 	
 	//$.mobile.pushStateEnabled = false;	
+</script>
+<script>
+	$(function(){
+		$('.default_popup').popup();	
+	});
 </script>
 
 	</head>
@@ -339,7 +346,7 @@
                     
                     <!-- Thurmond -->
                     <div class="item mark" data-position="850, 230" data-allow-scale="true">
-                       <a href="#thurmond-info" title="Thurmond" data-rel="popup" data-transition="pop" title="Thurmond"> <div>
+                       <a href="#thurmond-info" class="default_popup" title="Thurmond" data-rel="popup" data-transition="pop" title="Thurmond"> <div>
                             <div class="text">
                                 <!--<strong>Thurmond</strong>-->
                                 <!--<i class="fa fa-map-marker"></i>-->
@@ -347,7 +354,7 @@
                             <img class="marker" src="images/marker.png" width="50px"  />					
                         </div></a>	
                         
-                        <div data-role="popup" id="thurmond-info" class="ui-content" data-theme="a" style="max-width:350px;">
+                        <div id="thurmond-info" style="display:none">
                           <p><strong>Thurmond</strong></p>
                         </div>								
                      </div>	
