@@ -3,6 +3,7 @@
 /* Structure */
 body {
 	/*background:url(../images/tillman-bg-small.jpg);	*/
+	background:#35719E;
 }
 
 
@@ -23,9 +24,9 @@ body {
 	bottom:0;
 }
 
-#overlay .p2 {	
+/*#overlay .p2 {	
 	background:#fff;
-}
+}*/
 
 #main-header {
 	background:#316891;
