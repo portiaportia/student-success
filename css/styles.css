@@ -1,15 +1,15 @@
 * {margin:0; padding:0; box-sizing:border-box; font-family:Helvetica, Arial, sans-serif; font-size:100%; font-weight:100;}
 
 /* Structure */
-
 body {
-	background:#35719E;
+	background:#35719E;	/* blue Background */
 }
 
 body.cal {
 	background:#fff;
 }
 
+/* A static header that doesn't move */
 #main-header {
 	background:#316891;
 	padding:10px;
@@ -22,19 +22,7 @@ body.cal {
 	z-index:11;
 }
 
-
-#logo {
-	float:left;
-	width:7%;
-	margin-right:2%;
-
-}
-
-#logo img {
-	margin-top:1.2em;
-	max-width:33px;
-}
-
+/* The back arrow in the main hader */
 #back-arrow {
 	float:left;
 	width:7%;
@@ -45,6 +33,8 @@ body.cal {
 	text-decoration:none;
 }
 
+/* The link area surrounding the back arrow
+   This is bigger than the back arrow to make a larder clickable area */
 .back-link {
 	top:0;
 	left:0;
@@ -54,10 +44,7 @@ body.cal {
 	z-index:20;
 }
 
-a {
-	-webkit-tap-highlight-color: rgba(0,0,0,0);	
-}
-
+/* Main title on each page */
 #main-header h1 {
 	margin-top:.4em;
 	float:left;
@@ -81,13 +68,6 @@ a {
 	position:relative;
 	top:80px;
 }
-
-#zoom_container {
-	top:80px;
-	border:none;
-}
-
-
 
 #main-footer {
 	position:absolute;
@@ -141,7 +121,7 @@ a {
 	/*background:#fff;	*/
 }
 
-/* list */
+/* list*/
 #date-list li {
 	border-bottom:1px solid #abc;
 	color:#316891;
@@ -188,8 +168,10 @@ a {
 	color:#316891;
 }
 
-#special-content {
-	background:magenta;
+/* Map */
+#zoom_container {
+	top:80px;
+	border:none;
 }
 
 #map {
@@ -251,12 +233,14 @@ p {
 
 a {
 	color:#910836;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);  /* don't highlight items when clicked */
 }
 
 strong {
 	font-weight:600;
 }
 
+/* Add the bullets to the my money section */
 .my-money .details li {
 	list-style-type:disc;	
 	margin-left:20px;
@@ -270,31 +254,3 @@ video {
 	max-width:560px;
 	width:100%;	
 }
-/*
-@media screen and (min-width: 500px) {
-    body {
-        background:url(../images/tillman-bg-med.jpg);
-
-    }
-}
-
-@media screen and (min-width: 800px) {
-    body {
-       background:url(../images/tillman-bg-big.jpg);
-
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    body {
-       background:skyblue;
-    }
-}
-
-@media screen and (min-height: 796px) {
-	body {
-       background:skyblue;
-    }
-}
-
-*/
