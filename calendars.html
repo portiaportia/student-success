@@ -25,13 +25,8 @@
 		<script src="js/jquery.smoothState.js"></script>
 		<script src="js/script.js"></script>
       
-        <script>
-	    	//document.addEventListener("deviceready", onDeviceReady, false); 
-
-		  //function onDeviceReady() {
-			//	StatusBar.styleLightContent();
-		  //}
-		  
+        <script>		
+		  //list dates in array
 		  var dates = new Array();
 		  dates[0] = [new Date(2015, 7, 24), 1, "Classes Begin", "Fall Semester"];
 		  dates[1] = [new Date(2015, 7, 28), 0, "Tutee Seminar", "Academic Success Center", "12:00, 1:00, or 2:00", "Dinkins Auditorium"];
@@ -80,6 +75,7 @@
 		  list.html("");
 		  var today = new Date();
 		  
+		  //loop through the array and add the items to the #dat-list item
 		  for(var i=0; i < dates.length; i++)
 		  {
 				dates[i][0].setHours(23);	
@@ -103,15 +99,9 @@
 						dateDetails += "<p>" + dates[i][j] + "</p>";
 					}
 					
-					
-					
-					
 			  		list.append("<li class='" + dateClass + "'><div class='cal-date'>" + dateDisplay + "</div><div class='cal-details'>" + dateDetails + "</div></li>");
 				}
 		  }
-		  
-		  //prevents link gray style
-		document.addEventListener("touchstart", function(){}, true);
 		</script>
 	</body>
 </html>
