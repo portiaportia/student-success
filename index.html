@@ -4,7 +4,6 @@
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-         <script src="phonegap.js"></script>
 	</head>
 	<body>
     	<div id="overlay" class="home-body m-scene scene_element scene_element--fadein">
@@ -36,7 +35,7 @@
                         Events
                     </div>
                     
-                    <a href="map.html"> <!--onclick="window.open('comgooglemaps://', '_system')"-->
+                    <a href="map.html">
                         <div class="nav-item">
                             <p class="nav-icon"><i class="fa fa-map-marker"></i></p>
                             Map
@@ -50,19 +49,6 @@
                         </div>
                     </a>
                  </div>
-                 <div class="row">
-                    <!--
-                     
-                    -->
-                  <!--  <div class="nav-item">
-                        <p class="nav-icon"><i class="fa fa-futbol-o"></i></p>
-                        Athletics
-                    </div>
-                    <div class="nav-item">
-                        <p class="nav-icon"><i class="fa fa-facebook"></i></p>
-                        Social
-                    </div>-->
-                 </div>
 			</div>
 			<footer id="main-footer">
 				<img src="images/winthrop-logo.png">
@@ -70,20 +56,7 @@
         </div>
 		</div>
 		<script src="js/jquery-1.11.2.min.js"></script>
-		<script src="js/jquery.smoothState.js"></script>
+        <script src="phonegap.js"></script>
 		<script src="js/script.js"></script>
-        
-        
-       <script>
-    	document.addEventListener("deviceready", onDeviceReady, false); 
-
-		  function onDeviceReady() {
-				//StatusBar.styleDefault();
-				StatusBar.styleLightContent();
-		  }
-			
-			//prevents link gray style
-			document.addEventListener("touchstart", function(){}, true);
-		</script>
 	</body>
 </html>
