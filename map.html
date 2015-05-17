@@ -4,91 +4,8 @@
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/popup.css">
+        <link rel="stylesheet" href="css/map.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <style>
-		#overlay {
-			background:#fff;	
-		}
-			
-		.smooth_zoom_preloader {
-			background-image: url(zoom_assets/preloader.gif);
-		}	
-		.smooth_zoom_icons {
-			background-image: url(zoom_assets/icons.png);
-		}
-		#zoom_container .landmarks{
-			position:absolute;
-			z-index:10;	
-			top:0px;
-			left:0px;
-			font-family: Helvetica, Arial, Verdana;
-			font-size:12px;
-			color: #ffffff;
-		}	
-		#zoom_container .landmarks .item {
-			position:absolute;		
-			text-align:center;		
-			display: none;	
-		}	
-		#zoom_container .landmarks .lable div {
-			width: 100%;
-			/*padding: 4px;		*/
-		}	
-		#zoom_container .landmarks .mark .text{
-			color:#316891;
-			font-size:16px;
-			padding:2px 6px;
-			border-radius:5px;
-		}	
-		
-		.hide-map {
-			visibility:hidden;
-		}
-		
-	</style>
-<script src="zoom_assets/jquery-1.11.1.min.js"></script>
-<script src="zoom_assets/jquery.smoothZoom.js"></script>
-<script src="js/jquery.popup.js"></script>
-<script>	
-	jQuery(function($){
-		var width = $(window).width();
-
-		var height = $(window).height() - 75;
-		
-		$('#campus-map').smoothZoom({
-			width: width,
-			height: height,
-			pan_BUTTONS_SHOW: "NO",
-			pan_LIMIT_BOUNDARY: "NO",
-			zoom_BUTTONS_SHOW: false,
-			button_SIZE: 24,
-			button_ALIGN: "top right",	
-			zoom_MAX: 800,
-			border_TRANSPARENCY: 20,
-			container: 'zoom_container',
-			
-			/******************************************
-			Enable Responsive settings below if needed.
-			Max width and height values are optional.
-			******************************************/
-			responsive: false,
-			responsive_maintain_ratio: true,
-			max_WIDTH: '',
-			max_HEIGHT: ''
-		});
-		
-		$("#campus-map").removeClass("hide-map");
-	});
-	
-	//$.mobile.pushStateEnabled = false;	
-</script>
-<script>
-	$(function(){
-		$('.default_popup').popup();	
-	});
-</script>
-
 	</head>
 	<body>
     	<div id="overlay">
@@ -725,11 +642,11 @@
             </div>
 		</div>
         </div>
+        <script src="js/jquery-1.11.2.min.jss"></script>
+		<script src="zoom_assets/jquery.smoothZoom.js"></script>
+		<script src="js/jquery.popup.js"></script>
+		<script src="js/map-zoom.js"></script>
 		<script src="js/script.js"></script>
         <script src="phonegap.js"></script>
-		<script>
-			//prevents link gray style
-			
-		</script>
 	</body>
 </html>
