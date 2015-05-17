@@ -3,7 +3,6 @@
 	<head>
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
         <link rel="stylesheet" href="css/popup.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -50,7 +49,6 @@
 	</style>
 <script src="zoom_assets/jquery-1.11.1.min.js"></script>
 <script src="zoom_assets/jquery.smoothZoom.js"></script>
-<!--<script src="js/jquery.mobile-1.4.5.min.js"></script>-->
 <script src="js/jquery.popup.js"></script>
 <script>	
 	jQuery(function($){
@@ -105,19 +103,6 @@
                 <!-- Set correct width and height of the image. This is needed to avoid position issues on Apple devices iPad, iPhone and iPod -->
                 <img id="campus-map" class="hide-map" src="images/map.jpg" width="1500px" height="900px" />
         
-                <!-- HELP NOTE:----------------------------------------------------------------------------------- 
-                    * All the landmarks should be wrapped inside the div with class "landmarks" as shown below.
-                                
-                    * The "data-show-at-zoom" attribute is the percentage value in which the landmark will show. 
-                      Set this value to "0" if you want ot show landmarks always. 
-                      This attribute can also be set to individual landmarks with different zoom values.
-                      
-                    * The "data-allow-scale" attribute is to enable/ disable the scalability of landmarks (Doesn't supported by IE8 and below).
-                      Set "true" if the landmarks needs to resize along with main image.
-                      
-                    * The "data-allow-drag" attribute is to enable/disable the draggability of main image while the mouse/finger touches the landmarks.
-                      IMPORTANT: If the landmarks/locations/lables have hyperlinks, set data-allow-drag = "false"
-                ----------------------------------------------------------------------------------------------- -->
                 <div class="landmarks" data-show-at-zoom="0" data-allow-drag="false" data-allow-scale="false">	
                     
                     <!-- Joynes Hall -->
@@ -740,14 +725,11 @@
             </div>
 		</div>
         </div>
-        
-		<!--<script src="js/jquery-1.11.2.min.js"></script>-->
-		<script src="js/jquery.smoothState.js"></script>
 		<script src="js/script.js"></script>
         <script src="phonegap.js"></script>
 		<script>
 			//prevents link gray style
-			document.addEventListener("touchstart", function(){}, true);
+			
 		</script>
 	</body>
 </html>
