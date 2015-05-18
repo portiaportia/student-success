@@ -17,9 +17,11 @@ function showDetails()
 	//scrolls the content to the top
 	var parent = $(this).parent();
 	 
-	$('#content').animate({
-    	top: - parent.offset().top +160},
+	$('html, body').animate({
+    	scrollTop: parent.offset().top -80},
         500);
+		
+		alert(parent.offset().top);
 
 	return false;
 }
