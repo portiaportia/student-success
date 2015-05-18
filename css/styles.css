@@ -146,6 +146,10 @@ body.cal {
 	overflow:hidden;
 }
 
+#content {
+	position:relative;	
+}
+
 .nav-list .details, .cat-list .details {
 	padding:0 15px 15px;
 }
