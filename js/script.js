@@ -20,8 +20,6 @@ function showDetails()
 	$('html, body').animate({
     	scrollTop: parent.offset().top -80},
         500);
-		
-		alert(parent.offset().top);
 
 	return false;
 }
