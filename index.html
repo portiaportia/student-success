@@ -3,25 +3,29 @@
 	<head>
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/jquery.mobile.custom.structure.min.css">
+      <!--  <link rel="stylesheet" href="css/jquery.mobile.custom.theme.min.css">-->
+        <link rel="stylesheet" href="css/popup.css">
+        <link rel="stylesheet" href="css/map.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
-        <div id="page" class="">
+        <div class="page" id="home" data-role="page">
             <div id="home-content" class="">
                  <div class="row home-row">
-                    <a href="tutoring.html">
+                    <a href="#tutoring">
                         <div class="nav-item">
                             <p class="nav-icon"><i class="fa fa-group"></i></p>
                             Tutoring
                         </div>
                     </a>
-                    <a href="my-money.html">
+                    <a href="#mymoney">
                         <div class="nav-item">
                             <p class="nav-icon"><i class="fa fa-money"></i></p>
                             My Money
                         </div>
                     </a>
-                    <a href="calendars.html">
+                    <a href="#calendar">
                         <div class="nav-item">
                             <p class="nav-icon"><i class="fa fa-calendar"></i></p>
                             Calendar
@@ -30,14 +34,14 @@
                  </div>
                  
                  <div class="row">     
-                 	<a href="events.html">
+                 	<a href="#events">
                         <div class="nav-item">
                             <p class="nav-icon"><i class="fa fa-calendar-o"></i></p>
                             Events
                         </div>
                     </a>
                     
-                    <a href="map.html">
+                    <a href="#map" id="map-link">
                         <div class="nav-item">
                             <p class="nav-icon"><i class="fa fa-map-marker"></i></p>
                             Map
@@ -56,8 +60,891 @@
                 <img src="images/winthrop-logo.png">
             </footer>
 		</div>
+        
+        <!-- Tutoring -->
+        <div class="page" data-role="page" id="tutoring">
+			<header class="main-header">
+				<a class="back-link" href="#home"></a>
+                <div class="back-arrow" class="fa fa-chevron-left"><i class="fa fa-chevron-left"></i></div><h1>Tutoring</h1>
+			</header>
+			<div class="content">
+				<nav class="cat-list">
+					<ul>
+                    	<li>
+							<a class="cat-link" href="#academic-services">
+								<h3 class="list-title">Academic Success Center</h3> 
+								<div class="carrot" class="fa fa-chevron-down"></div>
+							</a>
+							<div class="details" id="academic-services">
+								<ul>
+                                	<li>Free peer tutoring, counselling on time management and study skills.</li>
+                                    <li>Spaces for group and individual study.</p>
+									<li><strong>Location:</strong> Dinkins, First Floor (Suite 106)</li>
+                                    <li><strong>Hours:</strong> Monday-Friday, 8:30 - 5pm</li>
+									<li><strong>Contact:</strong> <a href="tel:+803-323-3929">803-323-3929</a></li>
+                                    <li><a href="#" onclick="window.open('http:///www.winthrop.edu/success','_blank','location=yes')" target="_blank">www.winthrop.edu/success</a></li>
+								</ul>
+                            </div>
+						</li>
+					
+						<li>
+							<a class="cat-link" href="#house-calls">
+								<h3 class="list-title">House Calls</h3> 
+								<div class="carrot" class="fa fa-chevron-down"></div>
+							</a>
+							<div class="details" id="house-calls">
+								<ul>
+                                    <li>Request a tutoring session held in the residence halls in a variety of courses.</li>
+                                    <li>Tutoring begins after midterms.</li>
+                                    <li><strong>Hours:</strong> By appointment, Sundays-Thursdays, 7pm - 10pm</li>
+                                    <li><a href="#" onclick="window.open('http:///www.winthrop.edu/reslife','_blank','location=yes')" target="_blank">www.wingthrop.edu/reslife</a></li>
+								</ul>
+                            </div>
+						</li>
+						<li>
+							<a class="cat-link" href="#business">
+								<h3 class="list-title">Business Resource Room</h3> 
+								<div class="carrot" class="fa fa-chevron-down"></div>
+							</a>
+							<div class="details" id="business">
+								<ul>
+                                    <li>Tutoring available for several of the core business courses.</li>
+                                    <li><strong>Location: </strong>Thurmond 107</li>
+                                    <li><a href="#" onclick="window.open('http://www.winthrop.edu/cba/studentservices','_blank','location=yes')" target="_blank">www.winthrop.edu/cba/studentservices</a></li>
+                                    <li>Click "Resources," then choose "CBA Resources" from the drop-down menu</li>
+								</ul>
+                            </div>
+						</li>
+                        <li>
+							<a class="cat-link" href="#chem">
+								<h3 class="list-title">Chemistry Tutoring</h3> 
+								<div class="carrot" class="fa fa-chevron-down"></div>
+							</a>
+							<div class="details" id="chem">
+								<ul>
+                                    <li>Chemistry majors provide free tutoring in various CHEM courses.</li>
+                                    <li><strong>Location: </strong>Sims 301A</li>
+                                    <li>Hours vary each semester based on availability</li>
+								</ul>
+                            </div>
+						</li>
+                        <li>
+							<a class="cat-link" href="#international">
+								<h3 class="list-title">International Student Tutor</h3> 
+								<div class="carrot" class="fa fa-chevron-down"></div>
+							</a>
+							<div class="details" id="international">
+								<ul>
+                                    <li>Seek tutoring from a professional who specializes in assisting international students, especially with writing projects and presentations.</li>
+                                    <li><strong>Location: </strong>Dinkins 219</li>
+                                    <li><strong>Hours:</strong> Tues/Wed/Thurs 9am - 1:30pm, &amp; Fri 11am - 1:30pm</li>
+                                    <li>Email for appointments</li>
+                                    <li><a href="mailto:loweryl@winthrop.edu.com?subject=Tutoring">loweryl@winthrop.edu</li>
+								</ul>
+                            </div>
+						</li>
+                        <li>
+							<a class="cat-link" href="#math">
+								<h3 class="list-title">Math Tutorial Center</h3> 
+								<div class="carrot" class="fa fa-chevron-down"></div>
+							</a>
+							<div class="details" id="math">
+								<ul>
+                                    <li>Assistance available in a variety of 100- and 200-level Math courses.</li>
+                                    <li><strong>Location: </strong>Bancroft 165</li>
+                                    <li>Hours of operation vary each semester: check our website!</li>
+                                    <li>No appointment necessary.</li>
+                                    <li><a href="#" onclick="window.open('http://www.winthrop.edu/mathdpt/MTC.htm','_blank','location=yes')" target="_blank">www.winthrop.edu/mathdpt/MTC.htm</a></li>
+								</ul>
+                            </div>
+						</li>
+                        <li>
+							<a class="cat-link" href="#writing">
+								<h3 class="list-title">Writing Center</h3> 
+								<div class="carrot" class="fa fa-chevron-down"></div>
+							</a>
+							<div class="details" id="writing">
+								<ul>
+                                    <li>Appointments available to help with writing in any class and at any point in the writing process.</li>
+                                    <li><strong>Location: </strong>Bancroft 242</li>
+                                    <li><strong>Contact:</strong> <a href="tel:+803-323-2138">803-323-2138</a></li>
+                                    <li>Hours of operation vary each semester: check our website!</li>
+                                    <li><a href="#" onclick="window.open('http://www.winthrop.edu/wcenter','_blank','location=yes')" target="_blank">www.winthrop.edu/wcenter</a></li>
+								</ul>
+                            </div>
+						</li>
+					</ul>
+				</nav>
+             </div>
+		</div>
+        
+        <!-- MyMoney -->
+        <div data-role="page" id="mymoney" class="my-money">
+			<header class="main-header">
+				<a class="back-link" href="#home"></a>
+                <div class="back-arrow" class="fa fa-chevron-left"><i class="fa fa-chevron-left"></i></div><h1>My Money Matters</h1>
+			</header>
+			<div class="content">
+				<nav class="cat-list">
+					<ul>
+						<li>
+							<a class="cat-link" href="#first-year">
+								<h3 class="list-title">First Year Finances</h3> 
+								<div class="carrot" class="fa fa-chevron-down"></div>
+							</a>
+							<div class="details" id="first-year">
+								<h4>Budgeting Tips</h4>
+                                <ul>
+                                	<li>Take a few minutes to map out your daily and weekly expenses</li>
+                                    <li>Ask yourself, "How much money do I have over this period"</li>
+                                    <li>Plan your spending accordingly.</li>
+                                    <li>Give yourself a buffer of funds.</li>
+                                    <li>If you have a plan, you're more likely to meet your goal.</li>
+                                </ul>
+                            </div>
+						</li>
+						<li>
+							<a class="cat-link" href="#video">
+								<h3 class="list-title">Video Tutorials</h3> 
+								<div class="carrot" class="fa fa-chevron-down"></div>
+							</a>
+							<div class="details" id="video">
+								<h4>Smart Money</h4>
+                                 <video controls poster="video/money-poster.png">
+                                  <source src="video/smart-money.mp4" type="video/mp4">
+                                </video> 
+                                <h4 class="divider">State Scholarships</h4>
+                                <video controls poster="video/scholar-poster.png">
+                                  <source src="video/scolar.mp4" type="video/mp4">
+                                </video> 
+                            </div>
+						</li>
+						<li>
+							<a class="cat-link" href="#aid">
+								<h3 class="list-title">Financial Aid</h3> 
+								<div class="carrot" class="fa fa-chevron-down"></div>
+							</a>
+							<div class="details" id="aid">
+								<p>
+                                	Understanding the differences between each component of financial aid is important. Your first step is to speak directly with the Office of Financial Aid, where advisors are available to answer questions and help navigate the process.
+                                </p>
+                                
+                                <ul>
+                                	<li><strong>Location:</strong>  Sykes House-638 Oakland</li>
+                                    <li><strong>Hours:</strong> Monday-Friday 8:30am-5:00pm</li>
+                                    <li><strong>Phone:</strong> <a href="tel:+803-323-2189">803-323-2189</a></li>
+                                	<li><a href="#" onclick="window.open('http://www.winthrop.edu/finaid','_blank','location=yes')" target="_blank">www.winthrop.edu/finaid</a></li>	
+                                </ul>
+                            </div>
+						</li>
+                        <li>
+							<a class="cat-link" href="#fafsa">
+								<h3 class="list-title">FAFSA</h3> 
+								<div class="carrot" class="fa fa-chevron-down"></div>
+							</a>
+							<div class="details" id="fafsa">
+								<ul>
+                                	<li>Remember to renew your FAFSA each year</li>
+                                    <li><a href="#" onclick="window.open('http://www.fafsa.gov','_blank','location=yes')" target="_blank">www.fafsa.gov</a></li>	
+                                </ul>
+                            </div>
+						</li>
+                        <li>
+							<a class="cat-link" href="#resources">
+								<h3 class="list-title">Resources</h3> 
+								<div class="carrot" class="fa fa-chevron-down"></div>
+							</a>
+							<div class="details" id="resources">
+								<h4>$ALT</h4>
+                                <ul>
+                                	<li><a href="#" onclick="window.open('https://www.saltmoney.org/index.html','_blank','location=yes')" target="_blank">https://www.saltmoney.org/index.html</a></li>
+                                	<li>A budget calculator and interactive financial education information are available to students along with access to an online dashboard for tracking loan and repayment options.</li>
+                                </ul>
+                                <h4 class="divider">CashCourse</h4>
+                                <ul>
+                                	<li><a href="#" onclick="window.open('http://www.cashcourse.org/','_blank','location=yes')" target="_blank">http://www.cashcourse.org/</a></li>
+                               		<li>Customizable websites about money management and other financial skills are available to students, teachers, and institutions alike--everyone interested in enhancing student financial education.</li>
+                                </ul>
+                            </div>
+						</li>
+					</ul>
+				</nav>
+             </div>
+		</div>
+        
+        <!-- Calendar -->
+        <div class="page" data-role="page" id="calendar">
+			<header class="main-header">
+				<a class="back-link" href="#home"></a>
+                <div class="back-arrow" class="fa fa-chevron-left"><i class="fa fa-chevron-left"></i></div><h1>Calendar</h1>
+			</header>
+			<div id="content">
+				<nav class="cat-list">
+					<ul id="date-list">
+					</ul>
+				</nav>
+            </div>
+        </div>
+        
+        <!-- Events -->
+         <div class="page" data-role="page" id="events">
+			<header class="main-header">
+				<a class="back-link" href="#home"></a>
+                <div class="back-arrow" class="fa fa-chevron-left"><i class="fa fa-chevron-left"></i></div><h1>Events</h1>
+			</header>
+			<div id="content">
+				
+            </div>
+        </div>
+        
+        <!-- Map -->
+         <div class="page" data-role="page" id="map">
+			<header class="main-header">
+				<a class="back-link" href="#home"></a>
+                <div class="back-arrow" class="fa fa-chevron-left"><i class="fa fa-chevron-left"></i></div><h1>Campus Map</h1>
+			</header>
+            <div id="zoom_container">
+                
+                <!-- Set correct width and height of the image. This is needed to avoid position issues on Apple devices iPad, iPhone and iPod -->
+                <img id="campus-map" class="hide-map" src="images/map.jpg" width="1500px" height="900px" />
+                
+                <div class="landmarks" data-show-at-zoom="0" data-allow-drag="false" data-allow-scale="false">	
+                    
+                    <!-- Joynes Hall -->
+                    <div class="item mark" data-position="900, 280" data-allow-scale="true">
+                       <a href="#joynes-info" title="Joynes Hall" class="default_popup"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="joynes-info" style="display:none"">
+                          <p><strong>Joynes Hall</strong><br>Visitors Center, Admissions, The Inn, Baruch Room</p>
+                        </div>								
+                     </div>	
+                     
+                    <!-- Brynes Auditorium -->
+                    <div class="item mark" data-position="777, 270" data-allow-scale="true">
+                       <a href="#brynes-info" title="Brynes Auditorium" class="default_popup"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="brynes-info" style="display:none">
+                          <p><strong>Brynes Auditorium</strong></p>
+                        </div>								
+                     </div>
+                     
+                    <!-- Bancroft Hall -->
+                    <div class="item mark" data-position="680, 360" data-allow-scale="true">
+                       <a href="#bancroft-info" title="Bancroft Hall" class="default_popup"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="bancroft-info" style="display:none">
+                          <p><strong>Bancroft Hall</strong></p>
+                        </div>								
+                     </div>
+                    
+                    <!-- Margaret Nance Hall -->
+                    <div class="item mark" data-position="570, 410" data-allow-scale="true">
+                       <a href="#margaret-info" title="Margaret Nance Hall" class="default_popup"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="margaret-info" style="display:none">
+                          <p><strong>Margaret Nance Hall</strong></p>
+                        </div>								
+                     </div>
+                     
+                     <!-- Tillman Hall -->
+                    <div class="item mark" data-position="500, 460" data-allow-scale="true">
+                       <a href="#tillman-info" title="Tillman Hall" class="default_popup"> <div>
+                            <div class="text">
+                            </div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="tillman-info" style="display:none">
+                          <p><strong>Tillman Hall</strong></p>
+                        </div>								
+                    </div>	
+                    
+                    <!-- McLaurin Hall -->
+                    <div class="item mark" data-position="370, 500" data-allow-scale="true">
+                       <a href="#mclaurin-info" title="McLaurin Hall" class="default_popup""> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="mclaurin-info" style="display:none">
+                          <p><strong>McLaurin Hall</strong><br>Lewandowski Student Gallery</p>
+                        </div>								
+                    </div>
+                    
+                    <!-- President's House -->
+                    <div class="item mark" data-position="275, 670" data-allow-scale="true">
+                       <a href="#president-info" title="President's House" class="default_popup"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="president-info" style="display:none">
+                          <p><strong>President's House</strong></p>
+                        </div>								
+                    </div>
+                    
+                    <!-- Rutledge Building -->
+                    <div class="item mark" data-position="280, 540" data-allow-scale="true">
+                       <a href="#rutledge-info" title="Rutledge Building" class="default_popup"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="rutledge-info" style="display:none">
+                          <p><strong>Rutledge Building</strong><br>Patrick Gallery</p>
+                        </div>								
+                    </div>
+                    
+                    <!-- Roddey Hall-->
+                    <div class="item mark" data-position="250, 465" data-allow-scale="true">
+                       <a href="#roddey-info" title="Roddey Hall" class="default_popup"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="roddey-info" style="display:none">
+                          <p><strong>Roddey Hall</strong></p>
+                        </div>								
+                    </div>
+                    
+                    <!-- Johnson Hall-->
+                    <div class="item mark" data-position="220, 400" data-allow-scale="true">
+                       <a href="#johnson-info" title="Johnson Hall" class="default_popup"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="johnson-info" style="display:none">
+                          <p><strong>Johnson Hall</strong></p>
+                        </div>								
+                    </div>
+                    
+                    <!-- Courtyard at Winthrop-->
+                    <div class="item mark" data-position="340, 190" data-allow-scale="true">
+                       <a href="#courtyard-info" title="Courtyard at Winthrop" class="default_popup"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="courtyard-info" style="display:none">
+                          <p><strong>Courtyard at Winthrop</strong></p>
+                        </div>								
+                    </div>
+                    
+                    <!-- Facilities Management Office-->
+                    <div class="item mark" data-position="540, 150" data-allow-scale="true">
+                       <a href="#facilities-info" title="Facilities Management Office" class="default_popup"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="facilities-info" style="display:none">
+                          <p><strong>Facilities Management Office</strong></p>
+                        </div>								
+                    </div>
+                    
+                    <!-- Operations Center-->
+                    <div class="item mark" data-position="505, 120" data-allow-scale="true">
+                       <a href="#operations-info" title="Operations Center" class="default_popup"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="operations-info" style="display:none">
+                          <p><strong>Operations Center</strong></p>
+                        </div>								
+                    </div>
+                    
+                    <!-- West Center-->
+                    <div class="item mark" data-position="395, 320" data-allow-scale="true">
+                       <a href="#west-info" title="West Center" class="default_popup"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="west-info" style="display:none">
+                          <p><strong>West Center</strong></p>
+                        </div>								
+                    </div>
+                    
+                    <!--McBryde Hall-->
+                    <div class="item mark" data-position="460, 410" data-allow-scale="true">
+                       <a href="#mcbryde-info" title="McBryde Hall" class="default_popup"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="mcbryde-info" style="display:none">
+                          <p><strong>McBryde Hall</strong><br>Tuttle Dining Room</p>
+                        </div>								
+                    </div>
+                    
+                    <!--DiGiorgio Campus Center-->
+                    <div class="item mark" data-position="485, 310" data-allow-scale="true">
+                       <a href="#digs-info" title="DiGiorgio Campus Center" class="default_popup"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="digs-info" style="display:none">
+                          <p><strong>DiGiorgio Campus Center</strong></p>
+                        </div>								
+                    </div>
+                    
+                     <!--Crawford Building-->
+                    <div class="item mark" data-position="565, 345" data-allow-scale="true">
+                       <a href="#crawford-info" title="Crawford Building" class="default_popup"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="crawford-info" style="display:none">
+                          <p><strong>Crawford Building</strong></p>
+                        </div>								
+                    </div>
+                    
+                    <!--Owens Hall-->
+                    <div class="item mark" data-position="635, 330" data-allow-scale="true">
+                       <a href="#owens-info" title="Owens Hall" class="default_popup"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="owens-info" style="display:none">
+                          <p><strong>Owens Hall</strong></p>
+                        </div>								
+                    </div>
+                    
+                    <!--Kinard Hall-->
+                    <div class="item mark" data-position="680, 295" data-allow-scale="true">
+                       <a href="#kinard-info" title="Kinard Hall" class="default_popup"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="kinard-info" style="display:none">
+                          <p><strong>Kinard Hall</strong></p>
+                        </div>								
+                    </div>
+                    
+                    <!--Central Energy Plant-->
+                    <div class="item mark" data-position="485, 230" data-allow-scale="true">
+                       <a href="#energy-info" class="default_popup" title="Central Energy Plant"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="energy-info" style="display:none">
+                          <p><strong>Central Energy Plant</strong></p>
+                        </div>								
+                    </div>
+                    
+                    
+                    <!--Little Chapel-->
+                    <div class="item mark" data-position="665, 205" data-allow-scale="true">
+                       <a href="#chapel-info" class="default_popup" title="Little Chapel"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="chapel-info" style="display:none">
+                          <p><strong>Little Chapel</strong></p>
+                        </div>								
+                    </div>
+                    
+                     <!--Conservatory of Music-->
+                    <div class="item mark" data-position="740, 240" data-allow-scale="true">
+                       <a href="#music-info" class="default_popup" title="Conservatory of Music"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="music-info" style="display:none">
+                          <p><strong>Conservatory of Music</strong><br>Barnes Recital Hall</p>
+                        </div>								
+                    </div>
+                    
+                    <!--Sims Science Building-->
+                    <div class="item mark" data-position="745, 175" data-allow-scale="true">
+                       <a href="#sims-info" class="default_popup" title="Sims Science Building"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="sims-info" style="display:none">
+                          <p><strong>Sims Science Building</strong></p>
+                        </div>								
+                    </div>
+                    
+                    <!--Dalton Hall -->
+                    <div class="item mark" data-position="710, 150" data-allow-scale="true">
+                       <a href="#dalton-info" class="default_popup" title="Dalton Hall"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="dalton-info" style="display:none">
+                          <p><strong>Dalton Hall</strong><br>Formerly Life Sciences</p>
+                        </div>								
+                    </div>
+                    
+                    <!--Wofford Hall -->
+                    <div class="item mark" data-position="805, 85" data-allow-scale="true">
+                       <a href="#wofford-info" class="default_popup" title="Wofford Hall"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="wofford-info" style="display:none">
+                          <p><strong>Wofford Hall</strong></p>
+                        </div>								
+                    </div>
+                    
+                    <!--Richardson Hall -->
+                    <div class="item mark" data-position="845, 120" data-allow-scale="true">
+                       <a href="#richardson-info" class="default_popup" title="Richardson Hall"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="richardson-info" style="display:none">
+                          <p><strong>Richardson Hall</strong></p>
+                        </div>								
+                    </div>
+                    
+                    <!--Thomson Hall -->
+                    <div class="item mark" data-position="900, 205" data-allow-scale="true">
+                       <a href="#thomson-info" class="default_popup" title="Thomson Hall"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="thomson-info" style="display:none">
+                          <p><strong>Thomson Hall</strong><br>Dining Center</p>
+                        </div>								
+                    </div>
+                    
+                    <!--Carroll Hall -->
+                    <div class="item mark" data-position="855, 200" data-allow-scale="true">
+                       <a href="#carroll-info" class="default_popup" title="Carroll Hall"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="carroll-info" style="display:none">
+                          <p><strong>Carroll Hall</strong></p>
+                        </div>								
+                    </div>
+                    
+                    <!--Macfeat House -->
+                    <div class="item mark" data-position="820, 210" data-allow-scale="true">
+                       <a href="#macfeat-info" class="default_popup" title="Macfeat House"> <div>
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="macfeat-info" style="display:none">
+                          <p><strong>Macfeat House</strong></p>
+                        </div>								
+                    </div>
+                    
+                    <!-- Thurmond -->
+                    <div class="item mark" data-position="850, 255" data-allow-scale="true">
+                       <a href="#thurmond-info" class="default_popup" title="Thurmond"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="thurmond-info" style="display:none">
+                          <p><strong>Thurmond</strong></p>
+                        </div>								
+                     </div>	
+                    
+                    <!-- Lee Wicker Hall -->
+                    <div class="item mark" data-position="1020, 280" data-allow-scale="true">
+                       <a href="#wicker-info" class="default_popup" title="Lee Wicker Hall"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="wicker-info" style="display:none">
+                          <p><strong>Lee Wicker Hall</strong></p>
+                        </div>								
+                     </div>	
+                
+                    <!-- Phelps Hall -->
+                    <div class="item mark" data-position="985, 300" data-allow-scale="true">
+                       <a href="#phelps-info" class="default_popup" title="Phelps Hall"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="phelps-info" style="display:none">
+                          <p><strong>Phelps Hall</strong></p>
+                        </div>								
+                     </div>	
+                     
+                     <!-- Stewart House -->
+                    <div class="item mark" data-position="970, 425" data-allow-scale="true">
+                       <a href="#stewart-info" class="default_popup" title="Stewart House"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="stewart-info" style="display:none">
+                          <p><strong>Stewart House</strong></p>
+                        </div>								
+                     </div>	
+                     
+                     <!-- Student Activity Center -->
+                    <div class="item mark" data-position="1030, 660" data-allow-scale="true">
+                       <a href="#student-activity-info" class="default_popup" title="Student Activity Center"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="student-activity-info" style="display:none">
+                          <p><strong>Student Activity Center</strong></p>
+                        </div>								
+                     </div>	
+                     
+                     <!-- Student Activity Center -->
+                    <div class="item mark" data-position="980, 600" data-allow-scale="true">
+                       <a href="#withers-info" class="default_popup" title="Withers/W.T.S. Building"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="withers-info" style="display:none">
+                          <p><strong>Withers/W.T.S. Building</strong><br>Plowden Auditorium</p>
+                        </div>								
+                     </div>
+                     
+                     <!-- Dacus Library -->
+                    <div class="item mark" data-position="880, 500" data-allow-scale="true">
+                       <a href="#dacus-info" class="default_popup" title="Dacus Library"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="dacus-info" style="display:none">
+                          <p><strong>Dacus Library</strong></p>
+                        </div>								
+                     </div>
+                     
+                     <!-- Dinkins Hall -->
+                    <div class="item mark" data-position="725, 580" data-allow-scale="true">
+                       <a href="#dinkins-info" class="default_popup" title="Dinkins Hall"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="dinkins-info" style="display:none">
+                          <p><strong>Dinkins Hall</strong></p>
+                        </div>								
+                     </div>
+                     
+                     <!-- Good Building -->
+                    <div class="item mark" data-position="795, 610" data-allow-scale="true">
+                       <a href="#good-info" class="default_popup" title="Good Building"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="good-info" style="display:none">
+                          <p><strong>Good Building</strong></p>
+                        </div>								
+                     </div>
+                     
+                     <!-- Sykes House -->
+                    <div class="item mark" data-position="495, 685" data-allow-scale="true">
+                       <a href="#sykes-info" class="default_popup" title="Sykes House"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="sykes-info" style="display:none">
+                          <p><strong>Sykes House</strong></p>
+                        </div>								
+                     </div>
+                     
+                     <!-- Sellers House -->
+                    <div class="item mark" data-position="260, 810" data-allow-scale="true">
+                       <a href="#sellers-info" class="default_popup" title="Sellers House"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="sellers-info" style="display:none">
+                          <p><strong>Sellers House</strong></p>
+                        </div>								
+                     </div>
+                     
+                     <!-- Canterbury House -->
+                    <div class="item mark" data-position="100, 600" data-allow-scale="true">
+                       <a href="#canterbury-info" class="default_popup" title="Canterbury Housee"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="canterbury-info" style="display:none">
+                          <p><strong>Canterbury House</strong></p>
+                        </div>								
+                     </div>
+                     
+                     <!-- Parker Building -->
+                    <div class="item mark" data-position="70, 430" data-allow-scale="true">
+                       <a href="#parker-info" class="default_popup" title="Parker Building"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="parker-info" style="display:none">
+                          <p><strong>Parker Building</strong></p>
+                        </div>								
+                     </div>
+                     
+                     <!-- Workman Building -->
+                    <div class="item mark" data-position="1120, 345" data-allow-scale="true">
+                       <a href="#workman-info" class="default_popup" title="Workman Building"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="workman-info" style="display:none">
+                          <p><strong>Workman Building</strong></p>
+                        </div>								
+                     </div>
+                     
+                     <!-- Louise Pettus Archivesg -->
+                    <div class="item mark" data-position="1400, 580" data-allow-scale="true">
+                       <a href="#louise-info" class="default_popup" title="Louise Pettus Archives"> <div>	
+                            <img class="marker" src="images/marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="louise-info" style="display:none">
+                          <p><strong>Louise Pettus Archives</strong></p>
+                        </div>								
+                     </div>
+                     
+                     <!-----Streets ------>
+                     
+                     <!-- Memorial Circle -->
+                    <div class="item mark" data-position="870, 330" data-allow-scale="true">
+                       <a href="#memorial-info" class="default_popup" title="Memorial Circle"> <div>	
+                            <img class="marker" src="images/street-marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="memorial-info" style="display:none">
+                          <p><strong>Memorial Circle</strong></p>
+                        </div>								
+                     </div>
+                     
+                     <div class="item mark" data-position="799, 360" data-allow-scale="true">
+                       <a href="#memorial-info" class="default_popup" title="Memorial Circle"> <div>	
+                            <img class="marker" src="images/street-marker.png" width="25px"  />					
+                        </div></a>								
+                     </div>
+                     
+                    <!-- Alumni Drive -->
+                    <div class="item mark" data-position="620, 448" data-allow-scale="true">
+                       <a href="#alumni-drive-info" class="default_popup" title="Alumni Drive"> <div>	
+                            <img class="marker" src="images/street-marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="alumni-drive-info" style="display:none">
+                          <p><strong>Alumni Drive</strong></p>
+                        </div>								
+                     </div>
+                     
+                      <div class="item mark" data-position="330, 262" data-allow-scale="true">
+                       <a href="#alumni-drive-info" class="default_popup" title="Alumni Drive"> <div>	
+                            <img class="marker" src="images/street-marker.png" width="25px"  />					
+                        </div></a>							
+                     </div>
+                     
+                     <!-- Tillman Loop -->
+                    <div class="item mark" data-position="620, 525" data-allow-scale="true">
+                       <a href="#tillman-loop-info" class="default_popup" title="Tillman Loop"> <div>	
+                            <img class="marker" src="images/street-marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="tillman-loop-info" style="display:none">
+                          <p><strong>Tillman Loop</strong></p>
+                        </div>								
+                     </div>
+                     
+                     <div class="item mark" data-position="455, 610" data-allow-scale="true">
+                       <a href="#tillman-loop-info" class="default_popup" title="Tillman Loop"> <div>	
+                            <img class="marker" src="images/street-marker.png" width="25px"  />					
+                        </div></a>								
+                     </div>
+                     
+                     <!-- Founders Lane -->
+                    <div class="item mark" data-position="705, 215" data-allow-scale="true">
+                       <a href="#founders-lane-info" class="default_popup" title="Founders Lane"> <div>	
+                            <img class="marker" src="images/street-marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="founders-lane-info" style="display:none">
+                          <p><strong>Founders Lane</strong></p>
+                        </div>								
+                     </div>
+                     
+                     <!-- Presidents Circle -->
+                    <div class="item mark" data-position="760, 130" data-allow-scale="true">
+                       <a href="#presidents-circle-info" class="default_popup" title="Presidents Circle"> <div>	
+                            <img class="marker" src="images/street-marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="presidents-circle-info" style="display:none">
+                          <p><strong>Presidents Circle</strong></p>
+                        </div>								
+                     </div>
+                     
+                     <!-- Ebenezer Avenue -->
+                    <div class="item mark" data-position="780, 205" data-allow-scale="true">
+                       <a href="#ebenezer-info" class="default_popup" title="Ebenezer Avenue"> <div>	
+                            <img class="marker" src="images/street-marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="ebenezer-info" style="display:none">
+                          <p><strong>Ebenezer Avenue</strong></p>
+                        </div>								
+                     </div>
+                     
+                    <!-- Park Avenue -->
+                    <div class="item mark" data-position="950, 235" data-allow-scale="true">
+                       <a href="#park-ave-info" class="default_popup" title="Park Avenue"> <div>	
+                            <img class="marker" src="images/street-marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="park-ave-info" style="display:none">
+                          <p><strong>Park Avenue</strong></p>
+                        </div>								
+                     </div>
+                     
+                     <!-- Senior Circle -->
+                    <div class="item mark" data-position="940, 300" data-allow-scale="true">
+                       <a href="#senior-circle-info" class="default_popup" title="Senior Circle"> <div>	
+                            <img class="marker" src="images/street-marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="senior-circle-info" style="display:none">
+                          <p><strong>Senior Circle</strong></p>
+                        </div>								
+                     </div>
+                     
+                     <!-- Scholars Walk -->
+                    <div class="item mark" data-position="595, 315" data-allow-scale="true">
+                       <a href="#scholars-walk-info" class="default_popup" title="Scholars Walk"> <div>	
+                            <img class="marker" src="images/street-marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="scholars-walk-info" style="display:none">
+                          <p><strong>Scholars Walk</strong></p>
+                        </div>								
+                     </div>
+                     
+                     <!-- Heritage Lane -->
+                    <div class="item mark" data-position="355, 370" data-allow-scale="true">
+                       <a href="#heritage-lane-info" class="default_popup" title="Heritage Lane"> <div>	
+                            <img class="marker" src="images/street-marker.png" width="25px"  />					
+                        </div></a>	
+                        
+                        <div id="heritage-lane-info" style="display:none">
+                          <p><strong>Heritage Lane</strong></p>
+                        </div>								
+                     </div>
+                </div>
+            </div>
+
+
+			
+        </div>
+        
 		<script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/jquery-1.11.2.min.js"></script>
+		<script src="zoom_assets/jquery.smoothZoom.js"></script>
+        <script src="js/jquery.popup.js"></script>
+        <script src="js/map-zoom.js"></script>
         <script src="phonegap.js"></script>
 		<script src="js/script.js"></script>
+        <script src="js/jquery.mobile.custom.min.js"></script>
+        <script src="js/calendar.js"></script>
+        
+        <script>
+			
+		</script>
 	</body>
 </html>

@@ -5,12 +5,12 @@ body {
 	background:#35719E;	/* blue Background */
 }
 
-body.cal {
+#calendar {
 	background:#fff;
 }
 
 /* A static header that doesn't move */
-#main-header {
+.main-header {
 	background:#316891;
 	padding:10px;
 	padding-top:20px;
@@ -23,7 +23,7 @@ body.cal {
 }
 
 /* The back arrow in the main hader */
-#back-arrow {
+.back-arrow {
 	float:left;
 	width:7%;
 	margin-right:2%;
@@ -45,7 +45,7 @@ body.cal {
 }
 
 /* Main title on each page */
-#main-header h1 {
+.main-header h1 {
 	margin-top:.4em;
 	float:left;
 	width:90%;
@@ -53,7 +53,7 @@ body.cal {
 	text-align:center;
 }
 
-#main-header.home-header h1 {
+.main-header.home-header h1 {
 	float:none;
 	width:100%;
 	padding-right:0;
@@ -64,7 +64,7 @@ body.cal {
 	margin:20px 10px 30px 10px;
 }
 
-#content {
+.content {
 	position:relative;
 	top:80px;
 }
@@ -146,7 +146,7 @@ body.cal {
 	overflow:hidden;
 }
 
-#content {
+.content {
 	position:relative;	
 }
 
@@ -163,11 +163,11 @@ body.cal {
 	list-style-type:none;	
 }
 
-#list-title {
+.list-title {
 	float:left;
 }
 
-#carrot {
+.carrot {
 	float:right;
 	color:#316891;
 }

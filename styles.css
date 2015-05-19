@@ -1,0 +1,263 @@
+* {margin:0; padding:0; box-sizing:border-box; font-family:Helvetica, Arial, sans-serif; font-size:100%; font-weight:100;}
+
+/* Structure */
+body {
+	background:#35719E;	/* blue Background */
+}
+
+body.cal {
+	background:#fff;
+}
+
+/* A static header that doesn't move */
+#main-header {
+	background:#316891;
+	padding:10px;
+	padding-top:20px;
+	overflow:hidden;
+	position:fixed;
+	width:100%;
+	height:80px;
+	margin:0;
+	z-index:11;
+}
+
+/* The back arrow in the main hader */
+#back-arrow {
+	float:left;
+	width:7%;
+	margin-right:2%;
+	color:#fff;
+	font-size:1em;
+	margin-top:1.2em;
+	text-decoration:none;
+}
+
+/* The link area surrounding the back arrow
+   This is bigger than the back arrow to make a larder clickable area */
+.back-link {
+	top:0;
+	left:0;
+	position:absolute;
+	height:80px;
+	width:20%;
+	z-index:20;
+}
+
+/* Main title on each page */
+#main-header h1 {
+	margin-top:.4em;
+	float:left;
+	width:90%;
+	padding-right:9%;
+	text-align:center;
+}
+
+#main-header.home-header h1 {
+	float:none;
+	width:100%;
+	padding-right:0;
+	margin:auto;	
+}
+
+#home-content {
+	margin:20px 10px 30px 10px;
+}
+
+#content {
+	position:relative;
+	top:80px;
+}
+
+#main-footer {
+	position:absolute;
+	bottom:0;	
+	padding:10px;
+	background:rgba(255,255,255,0.9);
+	width:100%;
+}
+
+#main-footer img {
+	max-width:90%;	
+	margin:auto;
+	display:block;
+}
+
+/* Home page */
+.row {
+	margin-top:10px;
+	overflow:hidden;
+}
+
+.home-row {
+	margin-top:40px;	
+}
+
+.nav-item {
+	float:left;
+	width:33.3%;	
+	color:rgb(0,67,118);
+	color:#fff;
+	
+	text-align:center;
+	margin:10px 0;
+}
+
+.nav-item i{
+	font-size:3em;
+	color:rgba(0,67,118, 0.8);
+	/*color:#910836;*/
+}
+
+.nav-icon {
+	background:rgba(255,255,255,0.8);
+	background:#fff;
+	text-align:center;
+	padding:5px;
+	border-radius:5px;
+	width:4em;
+	margin:auto;
+	margin-bottom:5px;
+	/*background:#fff;	*/
+}
+
+/* list*/
+#date-list li {
+	border-bottom:1px solid #abc;
+	color:#316891;
+	padding:15px 15px;
+}
+
+.nav-list > ul, .cat-list > ul, .dir-list > ul {
+	list-style:none;
+}
+
+.nav-list > ul > li, .cat-list > ul > li, .dir-list > ul > li {
+	border-bottom:1px solid #abc;
+	color:#316891;
+	background:#fff;
+}
+
+.nav-list .nav-link, .cat-list .cat-link , .dir-list a{
+	text-decoration:none;
+	color:black;
+	display:block;
+	padding:15px 15px;
+	overflow:hidden;
+}
+
+#content {
+	position:relative;	
+}
+
+.nav-list .details, .cat-list .details {
+	padding:0 15px 15px;
+}
+
+.nav-list .details, .cat-list li:hover, .dir-list li:hover {
+	background:#F3F3F3;
+}
+
+.details li {
+	margin-bottom:8px;
+	list-style-type:none;	
+}
+
+#list-title {
+	float:left;
+}
+
+#carrot {
+	float:right;
+	color:#316891;
+}
+
+/* Map */
+#zoom_container {
+	top:80px;
+	border:none;
+}
+
+#map {
+	width:100%;	
+}
+
+/* calendar */
+#date-list li {
+	overflow:hidden;	
+}
+
+.cal-date {
+	float:left;
+	width:30%;
+	padding-right:1%;
+}
+
+.cal-details {
+	float:left;
+	width:69%;
+}
+
+#date-list .accademic-date {
+	background:rgba(144,7,53,0.2);	
+}
+
+#date-list .holiday-date {
+	background:rgba(45,158,146,0.2);	
+}
+
+
+/* Typography */
+h1 {
+	color:#fff;
+	font-size:1.75em;
+}
+
+h2 {
+	font-size:1.5em;
+}
+
+h3 {
+	font-size:1.125em;
+	font-weight:600;
+	color:#316891;
+}
+
+h4 {
+	font-size:1.1em;	
+	color:#316891;
+	margin-bottom:10px;
+}
+
+h4.divider {
+	margin-top:30px;
+}
+
+p {
+	font-size:1em;
+	margin-bottom:.3em;
+}
+
+a {
+	color:#910836;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);  /* don't highlight items when clicked */
+}
+
+strong {
+	font-weight:600;
+}
+
+/* Add the bullets to the my money section */
+.my-money .details li {
+	list-style-type:disc;	
+	margin-left:20px;
+}
+
+.my-money .details p {
+	margin-bottom:15px;	
+}
+
+video {
+	max-width:560px;
+	width:100%;	
+}
