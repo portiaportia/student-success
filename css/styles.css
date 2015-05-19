@@ -187,13 +187,13 @@ body {
 	overflow:hidden;	
 }
 
-.cal-date, .event-date {
+.cal-date {
 	float:left;
 	width:30%;
 	padding-right:1%;
 }
 
-.cal-details, .event-details {
+.cal-details {
 	float:left;
 	width:69%;
 }
@@ -211,7 +211,6 @@ body {
 	border-bottom:1px solid #abc;
 	color:#316891;
 	padding:15px 15px;
-	overflow:hidden;
 }
 
 .event-details li {
