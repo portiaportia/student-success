@@ -295,12 +295,12 @@ video {
 }
 
 /* iOs specific scrolling */
-.content, #event-list {
+.content {
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 }
  
 /* iOS specific fix, don't use it on Android devices */
-.content > * , #event-list > *{
+.content > * {
 	-webkit-transform: translateZ(0px);
 }

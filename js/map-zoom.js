@@ -4,6 +4,9 @@ $(document).on("pageshow","#map",function(){ // going to map
 			
 	function loadMap()
 	{		
+			
+			if(!$("#campus-map").hasClass("hide-map")) return;
+	
 			var width = $(window).width();
 
 			var height = $(window).height() - 75;
