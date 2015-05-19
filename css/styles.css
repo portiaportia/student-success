@@ -5,7 +5,7 @@ body {
 	background:#35719E;	/* blue Background */
 }
 
-#calendar {
+#calendar, #events {
 	background:#fff;
 }
 
@@ -214,11 +214,17 @@ body {
 }
 
 .event-details li {
-	margin-left:14px;
+	margin-left:17px;
 	list-style-type:disc;
 	margin-bottom:5px;	
 }
 
+#loader {
+	width:10%;
+	max-width:50px;
+	padding-top:40px;
+	padding-left:10px;
+}
 
 /* Typography */
 h1 {
