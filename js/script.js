@@ -4,8 +4,8 @@ $(function(){
 
 	//prevents highlighting
 	document.addEventListener("touchstart", function(){}, true);
-
 });
+
 
 //shows/hides details when the carrot is clicked
 function showDetails()
