@@ -6,6 +6,12 @@ $(function(){
 	document.addEventListener("touchstart", function(){}, true);
 });
 
+window.unload = function()
+{
+	$("#event-list").html("");
+	alert("bye");	
+}
+
 
 //shows/hides details when the carrot is clicked
 function showDetails()
