@@ -33,8 +33,8 @@ function showEvent(i, item)
 {
 	var dateDisplay = item.date + " " + item.time;
 	var eventDetails = "<h4>" + item.description + "</h4>";
-	eventDetails += "<ul><li>Location: " + item.location + "</li>";
-	eventDetails += "<li>Time: " + dateDisplay + "</li></ul>";
+	eventDetails += "Location: " + item.location + "<br>";
+	eventDetails += "Time: " + dateDisplay + "";
 	/*eventDetails += "<li>Duration: " + item.duration + "</li>";
 	eventDetails += "<li>Contact: <a href='tel:+"  + item.contact + "'>" + item.contact + "</a></li>";
 	eventDetails += "<li>Price: " + item.admission + "</li>";	
