@@ -28,11 +28,14 @@
                         </div>
                     </a>
                  </div>
+                 
                  <div class="row">     
-                    <div class="nav-item">
-                        <p class="nav-icon"><i class="fa fa-calendar-o"></i></p>
-                        Events
-                    </div>
+                 	<a href="map.html">
+                        <div class="nav-item">
+                            <p class="nav-icon"><i class="fa fa-calendar-o"></i></p>
+                            Events
+                        </div>
+                    </a>
                     
                     <a href="map.html">
                         <div class="nav-item">
@@ -56,5 +59,24 @@
 		<script src="js/jquery-1.11.2.min.js"></script>
         <script src="phonegap.js"></script>
 		<script src="js/script.js"></script>
+        <script>
+			function onLoad() {
+				document.addEventListener("deviceready", onDeviceReady, false);
+			}
+		
+			// device APIs are available
+			//
+			function onDeviceReady() {
+				alert("device ready");
+				document.addEventListener("pause", onPause, false);
+			}
+		
+			// Handle the pause event
+			//
+			function onPause() {
+				alert("device paused");
+			}
+
+		</script>
 	</body>
 </html>
