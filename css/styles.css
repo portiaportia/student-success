@@ -223,7 +223,7 @@ body {
 	width:10%;
 	max-width:50px;
 	padding-top:40px;
-	margin:auto;
+	padding-left:10px;
 }
 
 /* Typography */
@@ -289,3 +289,14 @@ video {
 .hide {
 	display:none;	
 }
+
+
+.content {
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+ 
+            /* iOS specific fix, don't use it on Android devices */
+        .content > * {
+            -webkit-transform: translateZ(0px);
+        }
