@@ -1,7 +1,5 @@
 $(document).on("pageshow","#events",function(){ // going to map
-  
-  //only load events if they haven't been loaded before
-  if($("#event-list").html() == "") loadEvents();
+  loadEvents();
 });
 			
 function loadEvents()
