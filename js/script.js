@@ -6,11 +6,13 @@ $(function(){
 	document.addEventListener("touchstart", function(){}, true);
 });
 
-window.unload = function()
-{
-	$("#event-list").html("");
-	alert("bye");	
+document.addEventListener("pause", onPause, false);
+
+function onPause() {
+    $("#event-list").html("");
+	alert("bye");
 }
+
 
 
 //shows/hides details when the carrot is clicked

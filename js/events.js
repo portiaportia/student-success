@@ -1,4 +1,4 @@
-$(document).on("pageshow","#events",function(){ // going to map
+$(document).on("pageshow","#events",function(){ 
   loadEvents();
 });
 			
