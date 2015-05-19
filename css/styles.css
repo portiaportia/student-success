@@ -290,13 +290,13 @@ video {
 	display:none;	
 }
 
-
-.content {
-            overflow-y: scroll;
-            -webkit-overflow-scrolling: touch;
-        }
+/* iOs specific scrolling */
+.content, #event-list {
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
  
-            /* iOS specific fix, don't use it on Android devices */
-        .content > * {
-            -webkit-transform: translateZ(0px);
-        }
+/* iOS specific fix, don't use it on Android devices */
+.content > * , #event-list > *{
+	-webkit-transform: translateZ(0px);
+}
