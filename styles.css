@@ -83,6 +83,11 @@ body.cal {
 	display:block;
 }
 
+#spacing {
+	height:300px;
+	background:red;	
+}
+
 /* Home page */
 .row {
 	margin-top:10px;

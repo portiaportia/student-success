@@ -1,6 +1,6 @@
 $(function(){
 	$(".cat-list .details").hide();
-	$(".cat-list a").click(showDetails);
+	$(".cat-list > a").click(showDetails);
 
 	//prevents highlighting
 	document.addEventListener("touchstart", function(){}, true);
