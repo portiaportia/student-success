@@ -122,12 +122,6 @@ body {
 }
 
 /* list*/
-#date-list li {
-	border-bottom:1px solid #abc;
-	color:#316891;
-	padding:15px 15px;
-}
-
 .nav-list > ul, .cat-list > ul, .dir-list > ul {
 	list-style:none;
 }
@@ -184,6 +178,12 @@ body {
 
 /* calendar */
 #date-list li {
+	border-bottom:1px solid #abc;
+	color:#316891;
+	padding:15px 15px;
+}
+
+#date-list li {
 	overflow:hidden;	
 }
 
@@ -204,6 +204,13 @@ body {
 
 #date-list .holiday-date {
 	background:rgba(45,158,146,0.2);	
+}
+
+/* Events */
+#event-list li {
+	border-bottom:1px solid #abc;
+	color:#316891;
+	padding:15px 15px;
 }
 
 
