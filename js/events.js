@@ -32,7 +32,7 @@ function parseEvents(data)
 function showEvent(i, item)
 {
 	var dateDisplay = item.date + " " + item.time;
-	var eventDetails = "<strong>" + item.description + "</strong>";
+	var eventDetails = "<h4>" + item.description + "</h4>";
 	eventDetails += "Location: " + item.location + "<br>";
 	eventDetails += "Time: " + dateDisplay + "";
 	/*eventDetails += "<li>Duration: " + item.duration + "</li>";

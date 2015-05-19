@@ -211,6 +211,7 @@ body {
 	border-bottom:1px solid #abc;
 	color:#316891;
 	padding:15px 15px;
+	overflow:hidden;
 }
 
 .event-details {
@@ -294,12 +295,12 @@ video {
 }
 
 /* iOs specific scrolling */
-.content {
+.content, #event-list {
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 }
  
 /* iOS specific fix, don't use it on Android devices */
-.content > * {
+.content > * , #event-list > *{
 	-webkit-transform: translateZ(0px);
 }
