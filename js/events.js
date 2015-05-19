@@ -16,15 +16,20 @@ function loadEvents()
 
 function parseEvents(data)
 {
+	$("#event-list").html("");
 	$.each(data.events, showEvent);
 }
 
 		
 function showEvent(i, item)
 {
+	var dateDisplay = item.date + " " + item.time;
+	var eventDetails = "<h4>" + item.description + "</h4>";
+	eventDetails += "<ul><li>Location: " + item.location + "</li>";
+	eventDetails += "<li>Price: " + item.admission + "</li>";
+	eventDetails += "<li>Duration: " + item.duration + "</li>";
+	eventDetails += "<li>GLI: " + item.gli + "</li>";
+	eventDetails += "<li>Contact: <a href='tel:+"  + item.contact + "'>" + item.contact + "</a></li></ul>";
 	
-	$("<li></li>").html(
-		 item.date + ": " +
-		item.time 
-	).appendTo("#event-list");
+	$("#event-list").append("<li><div class='event-date'>" + dateDisplay + "</div><div class='event-details'>" + eventDetails + "</div></li>");
 }

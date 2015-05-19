@@ -187,13 +187,13 @@ body {
 	overflow:hidden;	
 }
 
-.cal-date {
+.cal-date, .event-date {
 	float:left;
 	width:30%;
 	padding-right:1%;
 }
 
-.cal-details {
+.cal-details, .event-details {
 	float:left;
 	width:69%;
 }
@@ -207,10 +207,17 @@ body {
 }
 
 /* Events */
-#event-list li {
+#event-list > li {
 	border-bottom:1px solid #abc;
 	color:#316891;
 	padding:15px 15px;
+	overflow:hidden;
+}
+
+.event-details li {
+	margin-left:14px;
+	list-style-type:disc;
+	margin-bottom:5px;	
 }
 
 
@@ -238,6 +245,11 @@ h4 {
 
 h4.divider {
 	margin-top:30px;
+}
+
+#event-list h4 {
+	font-weight:600;
+	margin-bottom:5px;	
 }
 
 p {
