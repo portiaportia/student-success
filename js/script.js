@@ -6,9 +6,10 @@ $(function(){
 	document.addEventListener("touchstart", function(){}, true);
 });
 
-document.addEventListener("pause", onPause, false);
+document.addEventListener("deviceready", onDeviceReady, false);
 
-function onPause() {
+function onDeviceReady() {
+    // Now safe to use device APIs
     $("#event-list").html("");
 	alert("bye");
 }
