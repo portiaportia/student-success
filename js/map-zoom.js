@@ -1,4 +1,6 @@
-$("#map").show(loadMap);
+$(document).on("pageshow","#map",function(){ // going to map
+  loadMap();
+});
 			
 	function loadMap()
 	{		
