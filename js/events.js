@@ -4,6 +4,8 @@ $(document).on("pageshow","#events",function(){
 			
 function loadEvents()
 {	
+	if (!$.mobile.activePage.is("#events"))return;
+	
 	loader = $("<div id='loader'><img src='images/loading.gif' alt='loading...'></div>");	
 	loader.appendTo("#event-list").hide();
 
