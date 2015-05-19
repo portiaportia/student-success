@@ -220,8 +220,7 @@ body {
 }
 
 #loader {
-	width:10%;
-	max-width:50px;
+	width:20px;
 	padding-top:40px;
 	padding-left:10px;
 }
@@ -291,12 +290,12 @@ video {
 }
 
 /* iOs specific scrolling */
-.content, #event-list {
+.content {
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 }
  
 /* iOS specific fix, don't use it on Android devices */
-.content > * , #event-list > *{
+.content > * {
 	-webkit-transform: translateZ(0px);
 }
