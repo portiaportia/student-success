@@ -4,7 +4,7 @@ $(document).on("pageshow","#events",function(){
 			
 function loadEvents()
 {	
-	//if ($.mobile.activePage.is("#events"))return;
+	if (!$.mobile.activePage.is("#events"))return;
 	if($("#event-list").html()!="")return;
 	alert("after resume");
 	loader = $("<div id='loader'><img src='images/loading.gif' alt='loading...'></div>");	
