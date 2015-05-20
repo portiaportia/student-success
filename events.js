@@ -15,9 +15,9 @@ function loadEvents()
 	var endDate = convertDate(today + 30);
 
 	var url = "http://apps.winthrop.edu/API/CulturalEvents/events?startDate=" + startDate + "&endDate=" + endDate;
-	url = "http://apps.winthrop.edu/API/CulturalEvents/events?startDate=4/10/2015&endDate=5/10/2015";
-	
-	//url = "js/events-json.js";
+	alert(url);
+
+	url = "js/json-data.js";
 	
 	$.ajax({
 				type:"GET",
@@ -37,7 +37,7 @@ function convertDate(myDate)
 
 function parseEvents(data)
 {
-	alert("here");
+	
 	$("#event-list").html("");
 	
 	$.each(data.events, showEvent);
