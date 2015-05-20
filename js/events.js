@@ -9,7 +9,8 @@ function loadEvents()
 	
 	loader = $("<div id='loader'><img src='images/loading.gif' alt='loading...'></div>");	
 	loader.appendTo("#event-list");
-	loader.addClass("load");
+	var left = $(".page").width()/2-25;
+	loader.css("margin-left",left);
 	
 	var today = new Date();
 	var startDate = convertDate(today);
@@ -25,7 +26,7 @@ function loadEvents()
 				dataType:"json",
 				url:url,
 				beforeSend:function(){loader.removeClass("hide");},
-				complete:function(){loader.addClass("show");},
+				complete:function(){loader.addClass("hide");},
 				success:parseEvents
 			});			
 }

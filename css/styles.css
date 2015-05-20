@@ -246,10 +246,8 @@ body {
 	font-weight: normal;
 }
 
-.load {
-	width:20px;
-	padding-top:40px;
-	margin:auto;
+#loader {
+	padding-top:50px;
 }
 
 /* Typography */
