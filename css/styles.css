@@ -218,10 +218,34 @@ body {
 	width:100%;	
 }
 
-.event-details li {
-	margin-left:17px;
-	list-style-type:disc;
-	margin-bottom:5px;	
+.event-details li, .event-date li {
+	list-style-type:none;	
+	border:none;
+	line-height:1.5em;
+}
+
+.event-date {
+	float:left;
+	width:30%;
+	padding-right:1%;
+}
+
+.event-details {
+	float:left;
+	width:69%;
+}
+
+.event-details a {
+	color:#316891;
+}
+
+.event-details h4 {
+	color:#2D9E92;	
+}
+
+.event-details strong {
+	color: #3094A8;
+	font-weight:500;	
 }
 
 #loader {

@@ -45,16 +45,37 @@ function parseEvents(data)
 		
 function showEvent(i, item)
 {
-	var eventDetails = item.Title + " portia";
-	//var dateDisplay = item.date + " " + item.time;
-	//var eventDetails = "<h4>" + item.description + "</h4>";
-	//eventDetails += "Location: " + item.location + "<br>";
-	//eventDetails += "Time: " + dateDisplay + "";
+	var eventDate = new Date(item.EventDate);
+	var dateDisplay = "<ul><li>" + convertDate(eventDate) + "</li>";
+	dateDisplay+= "<li>" + item.StartTime + " - " + item.EndTime + "</li>";
+	
+	eventDetails += dateDisplay;
+	var eventDetails = "<h4>" + item.Title + "</h4>";
+	eventDetails += "<ul><li>" + item.Description + "</li>";
+	eventDetails += "<li><strong>Location: </strong>" + item.Location + "</li>";
+	eventDetails += "<li><strong>Contact:</strong> " + item.ContactPersonName + " <a href='tel:+" + item.ContactPersonPhoneNumber + "'>" + item.ContactPersonPhoneNumber +"</a></li>";
+
+	if(item.IsGLI) {
+		dateDisplay +=	"<li>GLI Event</li>";
+	}
+	
+	if(item.PriceDescription != "N/A")
+	{
+		eventDetails += "<li><strong>Price:</strong> " + item.PriceDescription + "</li>";
+	}
+	else
+	{
+		eventDetails += "<li><strong>Price:</strong> free</li>";
+	}
+	
+	eventDetails += "</ul>";
+	dateDisplay += "</ul>";
+
 	/*eventDetails += "<li>Duration: " + item.duration + "</li>";
 	eventDetails += "<li>Contact: <a href='tel:+"  + item.contact + "'>" + item.contact + "</a></li>";
 	eventDetails += "<li>Price: " + item.admission + "</li>";	
 	eventDetails += "<li>GLI : " + item.gli + "</li></ul>";*/
 	
 	
-	$("#event-list").append("<li class='event-details'>" + eventDetails + "</li>");
+	$("#event-list").append("<li><div class='event-date'>" + dateDisplay + "</div><div class='event-details'>" + eventDetails + "</div></li>");
 }
