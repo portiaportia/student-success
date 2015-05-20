@@ -22,12 +22,14 @@ function showDetails()
 {	
 //toggle	
 	var id = $(this).attr("href");
+	var parent = $(this).parent();
+	parent.siblings().find(".details").slideUp();
 	$(id).slideToggle();
 	$(this).find(".carrot i").toggleClass("fa fa-chevron-down").toggleClass("fa fa-chevron-up");
 
 
 	//move to top
-	var parent = $(this).parent();
+	//var parent = $(this).parent();
 	/*
 	$('html, body').animate({
     	scrollTop: parent.offset().top -$(".main-header").height()},
