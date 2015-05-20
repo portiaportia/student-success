@@ -18,7 +18,7 @@ function loadEvents()
 	var url = "http://apps.winthrop.edu/API/CulturalEvents/events?startDate=" + startDate + "&endDate=" + endDate;
 	url = "http://apps.winthrop.edu/API/CulturalEvents/events?startDate=4/10/2015&endDate=5/10/2015";
 	
-	url = "js/events-json.js";
+	//url = "js/events-json.js";
 	
 	$.ajax({
 				type:"GET",
