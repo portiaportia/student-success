@@ -8,14 +8,11 @@ $(function(){
 
 document.addEventListener("resume", onResume, false);
 
-
+//reload events when you return from pause and on event screen
 function onResume() {
-    // Now safe to use device APIs
     $("#event-list").html("");
 	loadEvents();
 }
-
-
 
 //shows/hides details when the carrot is clicked
 function showDetails()
