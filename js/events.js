@@ -65,7 +65,7 @@ function showEvent(i, item)
 	}
 	else
 	{
-		eventDetails += "<li><strong>Price:</strong> free</li>";
+		eventDetails += "<li><strong>Price:</strong> Free</li>";
 	}
 	
 	if(item.IsGLI) {
