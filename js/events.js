@@ -6,7 +6,7 @@ function loadEvents()
 {	
 	if (!$.mobile.activePage.is("#events"))return;
 	if($("#event-list").html()!="")return;
-	alert("after resume");
+	
 	loader = $("<div id='loader'><img src='images/loading.gif' alt='loading...'></div>");	
 	loader.appendTo("#event-list");
 	var left = $(".page").width()/2-25;
