@@ -30,7 +30,7 @@ function showDetails()
 	//toggle	
 	var id = $(this).attr("href");
 	$(id).slideToggle();
-	$(this).find("#carrot").toggleClass("fa fa-chevron-down").toggleClass("fa fa-chevron-up");
+	$(this).find(".carrot i").toggleClass("fa fa-chevron-down").toggleClass("fa fa-chevron-up");
 
 	return false;
 }
