@@ -20,6 +20,12 @@ function onResume() {
 //shows/hides details when the carrot is clicked
 function showDetails()
 {	
+//toggle	
+	var id = $(this).attr("href");
+	$(id).slideToggle();
+	$(this).find(".carrot i").toggleClass("fa fa-chevron-down").toggleClass("fa fa-chevron-up");
+
+
 	//move to top
 	var parent = $(this).parent();
 	
@@ -27,10 +33,6 @@ function showDetails()
     	scrollTop: parent.offset().top -80},
         500);
 	
-	//toggle	
-	var id = $(this).attr("href");
-	$(id).slideToggle();
-	$(this).find(".carrot i").toggleClass("fa fa-chevron-down").toggleClass("fa fa-chevron-up");
-
+	
 	return false;
 }
