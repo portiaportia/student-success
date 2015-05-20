@@ -28,11 +28,11 @@ function showDetails()
 
 	//move to top
 	var parent = $(this).parent();
-	
+	/*
 	$('html, body').animate({
-    	scrollTop: parent.offset().top -80},
+    	scrollTop: parent.offset().top -$(".main-header").height()},
         500);
 	
-	
+	*/
 	return false;
 }
