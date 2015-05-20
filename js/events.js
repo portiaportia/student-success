@@ -8,7 +8,7 @@ function loadEvents()
 	if($("#event-list").html()!="")return;
 	
 	loader = $("<div id='loader'><img src='images/loading.gif' alt='loading...'></div>");	
-	loader.appendTo("#event-list").hide();
+	loader.appendTo("#event-list");
 	loader.addClass("load");
 	
 	var today = new Date();
