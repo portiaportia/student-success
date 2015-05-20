@@ -23,8 +23,8 @@ function loadEvents()
 				type:"GET",
 				dataType:"json",
 				url:url,
-				//beforeSend:function(){loader.show();},
-				//complete:function(){loader.hide();},
+				beforeSend:function(){loader.show();},
+				complete:function(){loader.hide();},
 				success:parseEvents
 			});			
 }
@@ -37,7 +37,6 @@ function convertDate(myDate)
 
 function parseEvents(data)
 {
-	alert("here");
 	$("#event-list").html("");
 	
 	$.each(data.events, showEvent);
@@ -46,7 +45,7 @@ function parseEvents(data)
 		
 function showEvent(i, item)
 {
-	var eventDetails = item.Title;
+	var eventDetails = item.Title + " portia";
 	//var dateDisplay = item.date + " " + item.time;
 	//var eventDetails = "<h4>" + item.description + "</h4>";
 	//eventDetails += "Location: " + item.location + "<br>";
