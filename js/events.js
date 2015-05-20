@@ -19,7 +19,7 @@ function loadEvents()
 	var url = "http://apps.winthrop.edu/API/CulturalEvents/events?startDate=" + startDate + "&endDate=" + endDate;
 	url = "http://apps.winthrop.edu/API/CulturalEvents/events?startDate=4/10/2015&endDate=5/10/2015";
 	
-	//url = "js/events-json.js";
+	url = "js/events-json.js";
 	
 	$.ajax({
 				type:"GET",
@@ -47,13 +47,17 @@ function parseEvents(data)
 		
 function showEvent(i, item)
 {
-	var eventDate = new Date(item.EventDate);
-	
+	var stringDate = item.EventDate;
+	var year = stringDate.substring(0,stringDate.indexOf("-"));
+	stringDate = stringDate.substring(stringDate.indexOf("-")+1);
+	var month = stringDate.substring(0, stringDate.indexOf("-"));
+	stringDate = stringDate.substring(stringDate.indexOf("-")+1);
+	var day = stringDate.substring(0, stringDate.indexOf("T"));	
 	
 	eventDetails += dateDisplay;
 	var eventDetails = "<h4>" + item.Title + "</h4>";
 	//eventDetails += "<ul><li>" + item.Description + "</li>";
-	eventDetails += "<ul><li><strong>Time: </strong>" + convertDate(eventDate);
+	eventDetails += "<ul><li><strong>Time: </strong>" + month + "/" + day + "/" + year;
 	eventDetails += " (" + item.StartTime + " - " + item.EndTime + ")</li>";
 	
 	eventDetails += "<li><strong>Location: </strong>" + item.Location + "</li>";
