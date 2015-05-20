@@ -12,6 +12,7 @@ document.addEventListener("resume", onResume, false);
 function onResume() {
     // Now safe to use device APIs
     $("#event-list").html("");
+	alert("resuming");
 	loadEvents();
 }
 
