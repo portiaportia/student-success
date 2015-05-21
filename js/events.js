@@ -17,9 +17,8 @@ function loadEvents()
 	var endDate = convertDate(today + 30);
 
 	var url = "http://apps.winthrop.edu/API/CulturalEvents/events?startDate=" + startDate + "&endDate=" + endDate;
-	url = "http://apps.winthrop.edu/API/CulturalEvents/events?startDate=4/10/2015&endDate=5/10/2015";
-	
-	url = "js/events-json.js";
+	//url = "http://apps.winthrop.edu/API/CulturalEvents/events?startDate=4/10/2015&endDate=5/10/2015";
+	//url = "js/events-none.js";
 	
 	$.ajax({
 				type:"GET",
@@ -27,7 +26,9 @@ function loadEvents()
 				url:url,
 				beforeSend:function(){loader.removeClass("hide");},
 				complete:function(){loader.addClass("hide");},
-				success:parseEvents
+				success:parseEvents,
+				timeout: showError,
+				error: showError
 			});			
 }
 
@@ -41,9 +42,20 @@ function parseEvents(data)
 {
 	$("#event-list").html("");
 	
+	if(data.events.length == 0) showNoEvents();
+	
 	$.each(data.events, showEvent);
 }
 
+function showNoEvents()
+{
+	$("#event-list").append("<li><div class='event-details'>Sorry, there are no upcoming events listed. Please try again later.</div></li>");
+}
+
+function showError()
+{
+	$("#event-list").append("<li><div class='event-details'>Sorry, events could not be loaded at this time. Please try again later.</div></li>");
+}
 		
 function showEvent(i, item)
 {
