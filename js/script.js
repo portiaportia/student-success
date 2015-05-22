@@ -21,6 +21,8 @@ function showDetails()
 	var id = $(this).attr("href");
 	var parent = $(this).parent();
 	parent.siblings().find(".details").slideUp();
+	parent.siblings().find(".carrot i").removeClass("fa fa-chevron-up");
+	parent.siblings().find(".carrot i").addClass("fa fa-chevron-down");
 	$(id).slideToggle();
 	$(this).find(".carrot i").toggleClass("fa fa-chevron-down").toggleClass("fa fa-chevron-up");
 
