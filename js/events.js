@@ -99,5 +99,5 @@ function showEvent(i, item)
 	$("#event-list").append("<li><div class='event-details'>" + eventDetails + "</div></li>");
 	
 	//resize the page to account for header now that events are loaded
-	$("#events").height($("#events").height() +80);
+	//$("#events").height($("#events").height() +80);
 }
