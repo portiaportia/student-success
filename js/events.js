@@ -95,7 +95,6 @@ function showEvent(i, item)
 	eventDetails += "<li>Contact: <a href='tel:+"  + item.contact + "'>" + item.contact + "</a></li>";
 	eventDetails += "<li>Price: " + item.admission + "</li>";	
 	eventDetails += "<li>GLI : " + item.gli + "</li></ul>";*/
-	
-	
-	$("#event-list").append("<li><div class='event-details'>" + eventDetails + "</div></li>");
+
+$("#event-list").append("<li><div class='event-details'>" + eventDetails + "</div></li>");
 }

@@ -1,7 +1,7 @@
 $(function(){
 	$(".cat-list .details").hide();
 	$(".cat-link").click(showDetails);
-
+	
 	//prevents highlighting
 	document.addEventListener("touchstart", function(){}, true);
 });
@@ -36,4 +36,14 @@ function showDetails()
 	
 	*/
 	return false;
+}
+
+//resize all pages to account for the header when they show
+$(document).on("pageshow",".page",function(){ 
+  resizeCal();
+});
+			
+function resizeCal()
+{
+	$(".page:visible").height($(".page:visible").height() +80);
 }
