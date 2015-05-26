@@ -39,11 +39,12 @@ function showDetails()
 }
 
 //resize all pages to account for the header when they show
-$(document).on("pageshow",".page",function(){ 
+$(document).on("pageshow","#calendar",function(){ 
   resizeCal();
 });
 			
 function resizeCal()
 {
-	$(".page:visible").not("#events").height($(".page:visible").height() +80);
+	//$(".page:visible").not("#events").not("#map").height($(".page:visible").height() +80);
+	$("#calendar").height($("#calendar").height() +80);
 }
