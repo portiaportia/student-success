@@ -45,5 +45,5 @@ $(document).on("pageshow",".page",function(){
 			
 function resizeCal()
 {
-	$(".page:visible").not("events").height($(".page:visible").height() +80);
+	$(".page:visible").not("#events").height($(".page:visible").height() +80);
 }
