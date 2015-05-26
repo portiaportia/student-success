@@ -96,5 +96,8 @@ function showEvent(i, item)
 	eventDetails += "<li>Price: " + item.admission + "</li>";	
 	eventDetails += "<li>GLI : " + item.gli + "</li></ul>";*/
 
-$("#event-list").append("<li><div class='event-details'>" + eventDetails + "</div></li>");
+	$("#event-list").append("<li><div class='event-details'>" + eventDetails + "</div></li>");
+	
+	//resize the page to account for header now that events are loaded
+	$("#events").height($("#events").height() +80);
 }
