@@ -69,7 +69,7 @@ function showEvent(i, item)
 	eventDetails += dateDisplay;
 	var eventDetails = "<h4>" + item.Title + "</h4>";
 	//eventDetails += "<ul><li>" + item.Description + "</li>";
-	eventDetails += "<ul><li><strong>Time: </strong>" + month + "/" + day + "/" + year;
+	eventDetails += "<ul class='no-highlight'><li><strong>Time: </strong>" + month + "/" + day + "/" + year;
 	eventDetails += " (" + item.StartTime + " - " + item.EndTime + ")</li>";
 	
 	eventDetails += "<li><strong>Location: </strong>" + item.Location + "</li>";
