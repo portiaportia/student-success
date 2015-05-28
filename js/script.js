@@ -4,9 +4,6 @@ $(function(){
 	
 	//prevents highlighting
 	document.addEventListener("touchstart", function(){}, true);
-	
-	//enable pinch zoom in, in app browser
-	window.open(url, '_blank', 'EnableViewPortScale=yes');
 });
 
 document.addEventListener("resume", onResume, false);
