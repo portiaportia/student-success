@@ -90,7 +90,7 @@ body {
 }
 
 .home-row {
-	margin-top:40px;	
+	margin-top:50px;	
 }
 
 .nav-item {
@@ -148,7 +148,7 @@ body {
 	padding:0 15px 15px;
 }
 
-.nav-list .details, .cat-list li:hover, .dir-list li:hover {
+.nav-list .details, .cat-list :not(.no-highlight) li:hover, .dir-list li:hover {
 	background:#F3F3F3;
 }
 
