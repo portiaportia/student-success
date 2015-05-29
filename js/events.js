@@ -14,10 +14,10 @@ function loadEvents()
 	
 	var today = new Date();
 	var startDate = convertDate(today);
-	var endDate = convertDate(today + 30);
+	var endDate = convertDate(today + 90);
 
 	var url = "http://apps.winthrop.edu/API/CulturalEvents/events?startDate=" + startDate + "&endDate=" + endDate;
-	url = "http://apps.winthrop.edu/API/CulturalEvents/events?startDate=4/10/2015&endDate=5/10/2015";
+	//url = "http://apps.winthrop.edu/API/CulturalEvents/events?startDate=4/10/2015&endDate=5/10/2015";
 	//url = "js/events-none.js";
 	
 	$.ajax({
