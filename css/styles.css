@@ -79,6 +79,7 @@ body {
 
 #main-footer img {
 	max-width:90%;	
+	max-height:200px;
 	margin:auto;
 	display:block;
 }
@@ -418,5 +419,9 @@ video {
 	
 	.popup {
 		max-width:1000px;	
+	}
+	
+	#main-footer img {
+		max-height:500px;	
 	}
 }
