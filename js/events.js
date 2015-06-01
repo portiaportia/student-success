@@ -75,7 +75,7 @@ function showEvent(i, item)
 	eventDetails += " (" + item.StartTime + " - " + item.EndTime + ")</li>";
 	
 	eventDetails += "<li><strong>Location: </strong>" + item.Location + "</li>";
-	eventDetails += "<li><strong>Contact:</strong> <a href='tel:+" + item.ContactPersonPhoneNumber + "'>" + item.ContactPersonPhoneNumber +"</a></li>";
+	eventDetails += "<li><strong>Contact:</strong> "+ item.ContactPersonPhoneNumber + "</li>";
 
 	if(item.PriceDescription != "N/A")
 	{
