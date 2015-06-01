@@ -14,7 +14,9 @@ function loadEvents()
 	
 	var today = new Date();
 	var startDate = convertDate(today);
-	var endDate = convertDate(today + 90);
+	var lastDate = new Date();
+	lastDate.setDate(today.getDate() + 90);
+	var endDate = convertDate(lastDate);
 
 	var url = "http://apps.winthrop.edu/API/CulturalEvents/events?startDate=" + startDate + "&endDate=" + endDate;
 	//url = "http://apps.winthrop.edu/API/CulturalEvents/events?startDate=4/10/2015&endDate=5/10/2015";
@@ -34,7 +36,7 @@ function loadEvents()
 
 function convertDate(myDate)
 {
-	return (today.getMonth() + 1) + "/" + today.getDate() + "/" + today.getFullYear();
+	return (myDate.getMonth() + 1) + "/" + myDate.getDate() + "/" + myDate.getFullYear();
 	
 }
 
