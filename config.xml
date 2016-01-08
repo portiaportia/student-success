@@ -126,7 +126,7 @@
 
 	<!-- Need to update this with each release -->
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-    <string>101</string>
+    <string>102</string>
     </gap:config-file>
 
     <!--
