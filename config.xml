@@ -27,7 +27,7 @@
 	<preference name="phonegap-version" value="cli-6.4.0" />
 	
     <!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version"           value="3.5.0" />          <!-- all: current version of PhoneGap -->
+    <preference name="phonegap-version"           value="cli-6.4.0" />          <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
@@ -49,7 +49,7 @@
     <!--<gap:plugin name="org.apache.cordova.battery-status" />-->
     <!--<gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />-->
-    <!--gap:plugin name="org.apache.cordova.console" /-->
+    <gap:plugin name="org.apache.cordova.console" source="pgb" />
     <!--<gap:plugin name="org.apache.cordova.contacts" />-->
     <!--<gap:plugin name="org.apache.cordova.device" />-->
     <!--<gap:plugin name="org.apache.cordova.device-motion" />-->
@@ -62,12 +62,12 @@
     <gap:plugin name="org.apache.cordova.inappbrowser" />-->
     <!--<gap:plugin name="org.apache.cordova.media" />-->
     <!--<gap:plugin name="org.apache.cordova.network-information" />-->
-    <!--gap:plugin name="org.apache.cordova.splashscreen" /-->
+    <gap:plugin name="org.apache.cordova.splashscreen" source="pgb" />
     <!--<gap:plugin name="org.apache.cordova.vibration" />-->
 	
 	
 	<!-- Status bar -->
-	<!--:plugin name="org.apache.cordova.statusbar" version="0.1.4" /-->
+	<gap:plugin name="org.apache.cordova.statusbar" source="pgb" />
 <!--	<preference name="StatusBarOverlaysWebView" value="false" />
 	<preference name="StatusBarBackgroundColor" value="#000000" />
 	<preference name="StatusBarStyle" value="default" />-->
@@ -82,10 +82,9 @@
         <gap:plugin name="com.phonegap.plugins.barcodescanner" />
     -->
 	
-	<!--plugin name="org.li8.inappbrowser" spec="0.1" source="pgb" /-->
-<!-- *** trying this because other didnt' work *** ->
-<plugin name="cordova-plugin-background-mode" source="npm" />
-
+	<!-- name="org.li8.inappbrowser" spec="0.1" source="pgb" /-->
+	<!--**** Above plugin wasn't working ***-->
+	<plugin name="cordova-plugin-background-mode" source="npm" />
 	<!-- <gap:plugin name="nl.x-services.plugins.launchmyapp" version="3.2.0">
 		<param name="URL_SCHEME" value="" />
 	</gap:plugin> -->
