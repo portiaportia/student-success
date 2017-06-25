@@ -83,6 +83,8 @@
     -->
 	
 	<!--plugin name="org.li8.inappbrowser" spec="0.1" source="pgb" /-->
+<!-- *** trying this because other didnt' work *** ->
+<plugin name="cordova-plugin-background-mode" source="npm" />
 
 	<!-- <gap:plugin name="nl.x-services.plugins.launchmyapp" version="3.2.0">
 		<param name="URL_SCHEME" value="" />
