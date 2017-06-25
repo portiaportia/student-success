@@ -62,12 +62,12 @@
     <gap:plugin name="org.apache.cordova.inappbrowser" />-->
     <!--<gap:plugin name="org.apache.cordova.media" />-->
     <!--<gap:plugin name="org.apache.cordova.network-information" />-->
-    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <!--gap:plugin name="org.apache.cordova.splashscreen" /-->
     <!--<gap:plugin name="org.apache.cordova.vibration" />-->
 	
 	
 	<!-- Status bar -->
-	<gap:plugin name="org.apache.cordova.statusbar" version="0.1.4" />
+	<!--:plugin name="org.apache.cordova.statusbar" version="0.1.4" /-->
 <!--	<preference name="StatusBarOverlaysWebView" value="false" />
 	<preference name="StatusBarBackgroundColor" value="#000000" />
 	<preference name="StatusBarStyle" value="default" />-->
