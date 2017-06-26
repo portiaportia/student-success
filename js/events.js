@@ -61,7 +61,6 @@ function showError()
 		
 function showEvent(i, item)
 {
-	$("#event-list").append("before parse");
 	var stringDate = item.EventDate;
 	
 	var year = stringDate.substring(0,stringDate.indexOf("-"));
@@ -78,7 +77,7 @@ function showEvent(i, item)
 	
 	eventDetails += "<li><strong>Location: </strong>" + item.Location + "</li>";
 	eventDetails += "<li><strong>Contact:</strong> "+ item.ContactPersonPhoneNumber + "</li>";
-$("#event-list").append("after parse");
+
 	if(item.PriceDescription != "N/A")
 	{
 		eventDetails += "<li><strong>Price:</strong> " + item.PriceDescription + "</li>";

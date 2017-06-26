@@ -32,7 +32,7 @@
   dates[28] = [new Date(2017, 11, 6), 0, "Exams Begin"];
   dates[29] = [new Date(2017, 11, 12), 0, "Last Day of Exams"];
   dates[30] = [new Date(2017, 11, 16), 0, "Undergraduate and Graduate Commencement", "11am"];
-  dates[31] = [new Date(2017, 11, 15), 0, "Official Grades Available on Wingspan", "12pm"];
+  dates[31] = [new Date(2017, 11, 15), 0, "Official Grades Available on Wingspan, 12pm"];
   dates[32] = [new Date(2018, 0, 8), 1, "Spring Classes Begin"];
   dates[33] = [new Date(2018, 0, 12), 1, "Last Day to Drop/Add a Full Semester Course"];
   dates[34] = [new Date(2018, 0, 12), 0, "Tutee Seminar", "Academic Success Center", "1pm, 2pm", "Dinkins Auditorium"];
