@@ -61,8 +61,9 @@ function showError()
 		
 function showEvent(i, item)
 {
-		$("#event-list").append("In show event");
+	$("#event-list").append("before parse");
 	var stringDate = item.EventDate;
+	$("#event-list").append("after parse");
 	var year = stringDate.substring(0,stringDate.indexOf("-"));
 	stringDate = stringDate.substring(stringDate.indexOf("-")+1);
 	var month = stringDate.substring(0, stringDate.indexOf("-"));
