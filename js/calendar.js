@@ -20,7 +20,7 @@
   dates[16] = [new Date(2017, 9, 17), 2, "Fall Break", "No Class"];
   dates[17] = [new Date(2017, 9, 18), 1, "Advising Begins", "Spring 2017"];
   dates[18] = [new Date(2017, 9, 20), 0, "Tutee Seminar", "Academic Success Center", "2pm", "Dinkins Auditorium"];
-  dates[18] = [new Date(2017, 9, 20), 1, "Last Day to Withdraw From a Full-Semester Course"];
+  dates[19] = [new Date(2017, 9, 20), 1, "Last Day to Withdraw From a Full-Semester Course"];
   dates[20] = [new Date(2017, 9, 20), 1, "Last Day to S/U a Full-Semester Course"];
   dates[21] = [new Date(2017, 9, 24), 0, "Last Day to Sign up for a Tutor", "Academic Success Center"];
   dates[22] = [new Date(2017, 10, 1), 1, "Early Spring Registration Begins"];	  
