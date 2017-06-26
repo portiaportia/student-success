@@ -43,6 +43,7 @@ function convertDate(myDate)
 function parseEvents(data)
 {
 	$("#event-list").html("");
+	$("#event-list").html("In parse events");
 	
 	if(data.events.length == 0) showNoEvents();
 	
