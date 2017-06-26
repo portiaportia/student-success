@@ -43,7 +43,6 @@ function convertDate(myDate)
 function parseEvents(data)
 {
 	$("#event-list").html("");
-	$("#event-list").html("In parse events");
 	
 	if(data.events.length == 0) showNoEvents();
 	
@@ -62,6 +61,7 @@ function showError()
 		
 function showEvent(i, item)
 {
+		$("#event-list").append("In show event");
 	var stringDate = item.EventDate;
 	var year = stringDate.substring(0,stringDate.indexOf("-"));
 	stringDate = stringDate.substring(stringDate.indexOf("-")+1);
