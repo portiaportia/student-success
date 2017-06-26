@@ -15,7 +15,7 @@
   dates[11] = [new Date(2017, 8, 29), 0, "Tutee Seminar", "Academic Success Center", "2pm", "Dinkins Auditorium"];
   dates[12] = [new Date(2017, 9, 6), 0, "Tutee Seminar", "Academic Success Center", "2pm", "Dinkins Auditorium"];
   dates[13] = [new Date(2017, 9, 9), 1, "Interim Grades Available", "Wingspan"];	  
-  dates[14] = [new Date(2017, 9, 13), 0, "Tutee Seminar", "Academic Success Center", "2pm", "Dinkins Classroom 103 (Limited Space)"];
+  dates[14] = [new Date(2017, 9, 13), 0, "Tutee Seminar", "Academic Success Center", "2pm", "Dinkins Auditorium"];
   dates[15] = [new Date(2017, 9, 16), 2, "Fall Break", "No Class"];
   dates[16] = [new Date(2017, 9, 17), 2, "Fall Break", "No Class"];
   dates[17] = [new Date(2017, 9, 18), 1, "Advising Begins", "Spring 2017"];
