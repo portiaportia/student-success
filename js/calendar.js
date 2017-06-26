@@ -6,7 +6,7 @@
   dates[3] = [new Date(2017, 7, 29), 0, "Tutee Seminar", "Academic Success Center", "11am", "Dinkins Auditorium"];
   dates[4] = [new Date(2017, 7, 31), 0, "Student Involvement Fair", "11am", "Campus Green"];
   dates[5] = [new Date(2017, 8, 1), 0, "Tutee Seminar", "Academic Success Center", "12pm, 1pm, or 2pm", "Dinkins Auditorium"];
-  dates[6] = [new Date(2017, 8, 4, 2, "Labor Day Holiday", "No Classes"];
+  dates[6] = [new Date(2017, 8, 4), 2, "Labor Day Holiday", "No Classes"];
   
   dates[7] = [new Date(2017, 8, 8), 0, "Tutee Seminar", "Academic Success Center", "12pm, 1pm, or 2pm", "Dinkins Auditorium"]; 	  
   dates[8] = [new Date(2017, 8, 15), 0, "Tutee Seminar", "Academic Success Center", "2pm", "Dinkins Auditorium"];	  
