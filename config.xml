@@ -68,6 +68,9 @@
     <!--<gap:plugin name="org.apache.cordova.vibration" />-->
 	
 	
+	<!-- to use AJAX -->
+	<plugin name="com.indigoway.cordova.whitelist.whitelistplugin" spec="1.1.1" source="pgb" />
+	
 	<!-- Status bar -->
 	<!--gap:plugin name="org.apache.cordova.statusbar" source="pgb" /-->
 	<plugin name="cordova-plugin-statusbar" spec="~2.2.3" />
