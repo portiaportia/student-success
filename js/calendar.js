@@ -9,8 +9,8 @@
   dates[6] = [new Date(2017, 8, 4), 2, "Labor Day Holiday", "No Classes"];
   
   dates[7] = [new Date(2017, 8, 8), 0, "Tutee Seminar", "Academic Success Center", "12pm, 1pm, or 2pm", "Dinkins Auditorium"]; 	  
-  dates[8] = [new Date(2017, 8, 15), 0, "Tutee Seminar", "Academic Success Center", "2pm", "Dinkins Auditorium"];	  
-  dates[9] = [new Date(2017, 8, 14), 0, "Study Abroad Fair", "10:30am-1:00pm", "Richardson Ballroom"];
+  dates[8] = [new Date(2017, 8, 14), 0, "Study Abroad Fair", "10:30am-1:00pm", "Richardson Ballroom"];
+  dates[9] = [new Date(2017, 8, 15), 0, "Tutee Seminar", "Academic Success Center", "2pm", "Dinkins Auditorium"];	 
   dates[10] = [new Date(2017, 8, 22), 0, "Tutee Seminar", "Academic Success Center", "2pm", "Dinkins Auditorium"];	
   dates[11] = [new Date(2017, 8, 29), 0, "Tutee Seminar", "Academic Success Center", "2pm", "Dinkins Auditorium"];
   dates[12] = [new Date(2017, 9, 6), 0, "Tutee Seminar", "Academic Success Center", "2pm", "Dinkins Auditorium"];
@@ -32,9 +32,9 @@
   dates[28] = [new Date(2017, 11, 6), 0, "Exams Begin"];
   dates[29] = [new Date(2017, 11, 12), 0, "Last Day of Exams"];
   dates[30] = [new Date(2017, 11, 16), 0, "Undergraduate and Graduate Commencement", "11am"];
-  dates[31] = [new Date(2017, 11, 15), 0, "Official Grades Available on Wingspan", "2pm"];
+  dates[31] = [new Date(2017, 11, 15), 0, "Official Grades Available on Wingspan", "12pm"];
   dates[32] = [new Date(2018, 0, 8), 1, "Spring Classes Begin"];
-  dates[33] = [new Date(2018, 0, 13), 1, "Last Day to Drop/Add a Full Semester Course"];
+  dates[33] = [new Date(2018, 0, 12), 1, "Last Day to Drop/Add a Full Semester Course"];
   dates[34] = [new Date(2018, 0, 12), 0, "Tutee Seminar", "Academic Success Center", "1pm, 2pm", "Dinkins Auditorium"];
   dates[35] = [new Date(2018, 0, 15), 2, "Martin Luther King, Jr. Holiday", "No Classes"];
   dates[36] = [new Date(2018, 0, 19), 0, "Tutee Seminar", "Academic Success Center", "2pm", "Dinkins Auditorium"];
@@ -62,8 +62,8 @@
   dates[58] = [new Date(2018, 3, 25), 0, "Exams Begin"];
   dates[59] = [new Date(2018, 4, 1), 0, "Last Day of Exams"];
   dates[60] = [new Date(2018, 4, 3), 0, "Graduate Commencement, 7pm"];
-  dates[61] = [new Date(2018, 4, 5), 0, "Undergraduate Commencement, 11am"];
-  dates[62] = [new Date(2018, 4, 4), 0, "Official Grades Available on Wingspan", "12pm"];
+  dates[61] = [new Date(2018, 4, 5), 0, "Undergraduate Commencement, 10am & 3pm"];
+  dates[62] = [new Date(2018, 4, 4), 0, "Official Grades Available on Wingspan, 12pm"];
   
   var list = $("#date-list");
   list.html("");
