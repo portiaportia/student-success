@@ -53,7 +53,7 @@
   dates[49] = [new Date(2018, 2, 14), 2, "Spring Break", "No Class"];
   dates[50] = [new Date(2018, 2, 15), 2, "Spring Break", "No Class"];
   dates[51] = [new Date(2018, 2, 16), 2, "Spring Break", "No Class"];
-  dates[52] = [new Date(2018, 2, 16), 0, "Last Day to Sign up for a Tutor"];
+  dates[52] = [new Date(2018, 2, 17), 0, "Last Day to Sign up for a Tutor"];
   dates[53] = [new Date(2018, 2, 21), 1, "Advising for Fall 2017 Begins"];
   dates[54] = [new Date(2018, 2, 21), 1, "Registration for Summer Begins"];
   dates[55] = [new Date(2018, 3, 4), 1, "Early Fall Registration Begins"];
