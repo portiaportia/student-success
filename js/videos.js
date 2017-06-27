@@ -6,7 +6,8 @@ function loadVideos()
 {
 	var devicePlatform = device.platform;
 	
-	if(devicePlatform.toLowerCase == "android")
+	//make sure you don't need ()
+	if(devicePlatform.toLowerCase() == "android")
 	{
 		$("#video").load("videos-android.html");
 	}
