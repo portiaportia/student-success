@@ -13,6 +13,6 @@ function loadVideos()
 	}
 	else
 	{
-		$("#video").load("videos-android.html");
+		$("#video").load("videos.html");
 	}
 }
