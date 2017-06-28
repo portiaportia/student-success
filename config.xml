@@ -9,7 +9,7 @@
     <name>Success</name>
 
     <description>
-        A student success app for Winthrop University
+        A student success app for Winthrop University104
     </description>
 
     <author href="http://portiaplante.com" email="portiaplante@gmail.com">
@@ -135,7 +135,7 @@
 
 	<!-- Need to update this with each release -->
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-    <string>104</string>
+    <string>105</string>
     </gap:config-file>
 
     <!--
